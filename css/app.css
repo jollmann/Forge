@@ -13,7 +13,24 @@ ul, ol, li{list-style:none;}
 a{color:#fff; text-decoration:none;}
 a:hover{color:rgba(255,255,255,.6);}
 div, header, main, footer, section{float:left; width:100%; height:auto;}
+section{padding:0 40px;}
+footer{padding:0 40px;}
 div.row{float:none;}
+
+
+/* Tables --------- */
+.table{background:#171717; border:0;}
+.table thead{background:#404040;}
+.table thead tr th{cursor:pointer; font-size:13px; line-height:14px; color:#fff; font-weight:400; text-transform:uppercase; padding:15px 10px; text-align:left; vertical-align:middle;}
+.table tbody{background:#171717;}
+.table tbody tr:nth-of-type(even){background:#171717;}
+.table tbody tr{-webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease;}
+.table tbody tr:hover{background:rgba(255,255,255,.1);}
+.table tbody tr:hover td{color:#fff;}
+.table tbody tr td{border-bottom:2px solid #404040; text-align:left; vertical-align:middle; padding-top:16px; padding-bottom:16px; color:#959595; font-size:14px; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease;}
+.table tbody tr td a{color:#3bc102;}
+.table tbody tr td a:hover{color:#fff;}
+.table tbody tr td img{-webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
 
 
 /* Loader - Loading --------- */
@@ -56,15 +73,18 @@ div.row{float:none;}
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea{
     background:#483f3e; display:block; width:100%; height:55px; padding:12px 17px 13px; font-size:14px; line-height:22px; color:#ccc; border:0;
 }
+input[type="file"]{color:transparent; text-align:center; height:42px; width:auto;}
+input[type="file"]::-webkit-file-upload-button{visibility:hidden;}
+input[type="file"]::before{content:'Upload an Image'; display:inline-block; color:#ccc;}
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus{
     color:#666;
 }
 textarea{height:200px;}
-.select{position:relative;}
+.select{position:relative; height:55px; padding:12px 17px 13px;}
 .select::after{content:'\f199'; font-family:'foundation-icons'; position:absolute; top:0; right:10px; color:#fff; font-size:24px; z-index:1;}
 select{background:none; border:2px solid rgba(255,255,255,.7); -webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease; color:#ccc; font-size:14px; line-height:16px; position:relative; z-index:2;}
 select:focus, input:focus, textarea:focus{outline:none;}
-.label{position:relative; font-size:14px; line-height:16px; color:#959595; padding:0 0 10px 0; font-family:'Open Sans', sans-serif; background-color:transparent;}
+.label{position:relative; font-size:14px; line-height:16px; color:#959595; padding:10px 0; font-family:'Open Sans', sans-serif; background-color:transparent; cursor:auto;}
 .label em{color:#ac070b;}
 
 
@@ -96,7 +116,7 @@ header .priNav .main-nav ul li a i.fi-arrow-down{margin-left:10px;}
 
 
 /* Footer --------- */
-footer{background:#101010; margin-top:190px; padding:70px 0 15px 0;}
+footer{background:#101010; margin-top:190px; padding:70px 40px 15px 40px;}
 footer .footer-top .emailSignUp{margin-top:55px; border-top:1px solid rgba(255,255,255,.4); padding-top:55px;}
 footer .footer-top h2{float:left; width:100%; text-align:left; font-size:18px; line-height:24px; color:#fff; font-weight:400; margin:0 0 33px 0;}
 footer .footer-top ul{float:left; width:100%;}
@@ -126,11 +146,23 @@ footer .footer-bottom .logo{text-align:center;}
 footer .footer-bottom .copyright{text-align:right;}
 footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color:#959595; font-weight:100; font-style:normal;}
 
+/* Pagination --------- */
+.pagination{float:left; margin:30px 0;}
+.pagination ul{float:left; width:100%;}
+.pagination ul li{display:inline-block; float:left; text-align:center; color:#fff; font-weight:400; font-size:16px; padding:0 5px;}
+.pagination ul li:first-child{padding-left:0;}
+.pagination ul li span{padding:15px 20px 9px 20px; background:#3bc102; float:left;}
+.pagination ul li a{padding:5px 15px; display:block; color: #fff; margin-top:10px;}
+.pagination ul li a:hover{color:rgba(255,255,255,.6);}
+.pagination ul li a.previous, .pagination ul li a.next{border:2px solid #404040; margin-top:0;}
+.pagination ul li a.previous i, .pagination ul li a.next i{font-size: 22px;}
+
+
 
 /* Sign In/Sign Up Pages --------- */
 .sisu{min-height:800px;}
 .sisu main{margin-bottom:100px;}
-.sisu main .form-container{ width:400px; margin-top:200px; position:relative;}
+.sisu main .form-container{ width:400px; margin-top:9%; position:relative;}
 .sisu main .form-container h1{font-size:28px; line-height:32px; font-weight:100; width:100%; margin-bottom:60px; text-align:center;}
 .sisu main .form-container ul{float:left; width:100%;}
 .sisu main .form-container ul li{position:relative; float:left; width:100%;}
@@ -188,6 +220,16 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .account .subFeature .sidebar .navigation ul li a i{float:right;}
 .account .subFeature .sidebar .storeNav{margin-top:40px;}
 
+.account .subFeature .page-title{margin-bottom:30px;}
+.account .subFeature .page-title h1{text-align:left; color:#fff; font-size:32px;}
+.account .subFeature .page-title ul{float:left; width:100%;}
+.account .subFeature .page-title ul li{float:right; margin-right:20px;}
+.account .subFeature .page-title ul li:first-child{margin-right:0;}
+.account .subFeature .page-title ul li a{display:inline-block; color:#fff;}
+.account .subFeature .page-title ul li a i{font-size:20px;}
+
+
+/* Account - Dashboard --------- */
 .account .subFeature .main-content .container{background:#101010; margin:0 2%; text-align:center; box-shadow:0px 2px 5px #000; width:46%; padding:65px 0 0 0; background: #2c7100; /* Old browsers */ background: -moz-linear-gradient(45deg,  #2c7100 0%, #3bc102 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#2c7100), color-stop(100%,#3bc102)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* IE10+ */ background: linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c7100', endColorstr='#3bc102',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
 .account .subFeature .main-content .container .promo{background:#f4f4f4; margin-top:65px; padding:30px 0.9375rem;}
 .account .subFeature .main-content .container .promo p{font-size:13px; line-height:21px; color:#171717; text-transform:uppercase; font-weight:600;}
@@ -200,9 +242,16 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .account .subFeature .main-content .container .sectionLinks ul li a i{font-size:20px;}
 
 
+/* Account - Profile --------- */
+.edit-profile main .profileForm ul{float:left; width:100%;}
+.edit-profile main .profileForm ul li{float:left; width:100%;}
+.edit-profile main .profileForm .avatar{margin-top:15px;}
+.edit-profile main .profileForm .avatar label{width:25%; float:left;}
+.edit-profile main .profileForm .avatar label img{-webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
+.edit-profile main .profileForm .avatar input[type="file"]{width:50%; float:left; margin:26px 0 0 20px;}
 
 
-
+/* Account - Order History --------- */
 
 
 
