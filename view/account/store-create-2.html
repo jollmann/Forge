@@ -32,15 +32,15 @@
             <section>
                 <div class="row">
                     <div class="store-form-container small-12 small-centered large-centered medium-8 large-5 columns">
-                        <h1>Let's begin with the essentials.</h1>
+                        <h1>Give us the inside scoop.</h1>
                         <div class="paged small-12">
                             <ul>
-                                <li class="current">
+                                <li>
                                     <span>
                                         <a href="store-create-1.html"></a>
                                     </span>
                                 </li>
-                                <li>
+                                <li class="current">
                                     <span>
                                         <a href="store-create-2.html"></a>
                                     </span>
@@ -62,27 +62,73 @@
                                 </li>
                             </ul>
                         </div>
-                        <form class="icons small-12 small-centered columns">
+                        <form class="standard small-12 small-centered columns">
                             <ul>
                                 <li>
-                                    <label><i class="fi-magnifying-glass"></i></label>
-                                    <input type="search" placeholder="Search for a store URL" autocomplete="off">
+                                    <label class="label">Store Name<em>*</em></label>
+                                    <input type="text" placeholder="e.g. Store Name" autocomplete="off">
                                 </li>
                                 <li>
-                                    <a class="availability btn green">Check Availability</a>
+                                    <label class="label">Store Email Address<em>*</em></label>
+                                    <input type="email" placeholder="e.g. support@yourstore.com" autocomplete="off">
                                 </li>
                                 <li>
-                                    <button class="btn trans">Make it yours</button>
+                                    <label class="label">Store Phone<em>*</em></label>
+                                    <input type="tel" placeholder="e.g. 9205551234" autocomplete="off">
+                                </li>
+                                <li>
+                                    <label class="label">Services Provided<em>*</em></label>
+                                    <input type="text" placeholder="e.g. I make custom game calls" autocomplete="off">
+                                </li>
+                                <li>
+                                    <label class="label">About Your Store<em>*</em></label>
+                                    <textarea placeholder="e.g. A little something about your shop"></textarea>
+                                </li>
+                                <li>
+                                    <label class="label">Business Type<em>*</em></label>
+                                    <select class="select">
+                                        <option>Please choose...</option>
+                                        <option value="custom_fishing">Custom Made / Handmade Fishing Products</option>
+                                        <option value="custom_hunting">Custom Made / Handmade Hunting Products</option>
+                                        <option value="custom_camping">Custom Made / Handmade Camping Products</option>
+                                        <option value="custom_general">Custom Made / Handmade General Outdoor Products</option>
+                                        <option value="retailer">Outdoor Sporting Goods Retailer</option>
+                                        <option value="campground">Campground</option>
+                                        <option value="guide">Guide Service</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label class="label forRadio">Are planning on selling weapons and/or ammunition?<em>*</em></label>
+                                    <ol>
+                                        <li>
+                                            <div class="small-12 radio">
+                                                <input id="no" name="no" value="0" type="radio">
+                                                <label for="no"></label>
+                                            </div>
+                                            <span>No</span>
+                                        </li>
+                                        <li>
+                                            <div class="small-12 radio">
+                                                <input id="yes" name="no" value="1" type="radio">
+                                                <label for="yes"></label>
+                                            </div>
+                                            <span>Yes</span>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>* Please note, we do not permit the sale of firearms.</p>
                                 </li>
                             </ul>
                         </form>
                         <div class="prev-next small-12">
                             <ul>
                                 <li>
-                                    <a class="btn trans" href="dashboard-shopper.html"><i class="fi-arrow-left"></i> Back</a>
+                                    <a class="btn trans" href="store-create-1.html"><i class="fi-arrow-left"></i> Back</a>
                                 </li>
                                 <li>
-                                    <a class="btn green" href="store-create-2.html">Next <i class="fi-arrow-right"></i></a>
+                                    <a class="btn green" href="store-create-3.html">Next <i class="fi-arrow-right"></i></a>
                                 </li>
                             </ul>
                         </div>

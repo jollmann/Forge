@@ -9,7 +9,9 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 h1, h2, h3, h4, h5, h6{color:#fff;}
 p{margin-bottom:0; font-size:16px; line-height:24px; color:#959595;}
 a, button{-webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease;}
+a:focus{color:#3bc102;}
 ul, ol, li{list-style:none;}
+ul li ul, ul li ol{margin:0; padding:0;}
 a{color:#fff; text-decoration:none;}
 a:hover{color:rgba(255,255,255,.6);}
 div, header, main, footer, section{float:left; width:100%; height:auto;}
@@ -86,13 +88,28 @@ input[type="file"]::before{content:'Upload an Image'; display:block; color:#ccc;
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus{
     color:#666;
 }
+
+.radio{margin-top:10px; float: left; width: 28px; height: 28px; background: #fcfff4; background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5); -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5); box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5); position: relative;}
+.radio input[type="radio"]{visibility: hidden;}
+.radio input[type="radio"] + label{margin-left:0; margin-right:0;}
+.radio label{margin: 0; cursor: pointer; position: absolute; width: 20px; height: 20px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; left: 4px; top: 4px; -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white; -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white; box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white; background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%); background: -moz-linear-gradient(top, #222222 0%, #45484d 100%); background: -o-linear-gradient(top, #222222 0%, #45484d 100%); background: -ms-linear-gradient(top, #222222 0%, #45484d 100%); background: linear-gradient(top, #222222 0%, #45484d 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222222', endColorstr='#ff45484d',GradientType=0 );}
+.radio label:after{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);opacity: 0;content: '';position: absolute;width: 16px;height: 16px;background: #3bc102;background: -webkit-linear-gradient(top, #3bc102 0%, #388f00 100%);background: -moz-linear-gradient(top, #3bc102 0%, #388f00 100%);background: -o-linear-gradient(top, #3bc102 0%, #388f00 100%);background: -ms-linear-gradient(top, #3bc102 0%, #388f00 100%);background: linear-gradient(top, #3bc102 0%, #388f00 100%);-webkit-border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%;border-radius: 50%;-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);top: 2px;left: 2px;}
+.radio label:hover::after{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter: alpha(opacity=30);opacity: 0.3;}
+.radio input[type=radio]:checked + label:after{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);opacity: 1;}
+.radio span{float:left; color:#959595; font-size:14px; line-height:16px;}
+
 textarea{height:200px;}
 .select{position:relative; height:55px; padding:12px 17px 13px;}
 .select::after{content:'\f199'; font-family:'foundation-icons'; position:absolute; top:0; right:10px; color:#fff; font-size:24px; z-index:1;}
 select{background:none; border:2px solid rgba(255,255,255,.7); -webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease; color:#ccc; font-size:14px; line-height:16px; position:relative; z-index:2;}
 select:focus, input:focus, textarea:focus{outline:none;}
-.label{position:relative; font-size:14px; line-height:16px; color:#959595; padding:10px 0; font-family:'Open Sans', sans-serif; background-color:transparent; cursor:auto;}
+.label{position:relative; font-size:14px; line-height:16px; color:#959595; padding:10px 0; font-family:'Open Sans', sans-serif; background-color:transparent; cursor:auto; text-align:left;}
 .label em{color:#ac070b;}
+
+/* Crop Box --------- */
+.imageBox{position: relative; height: 400px; width: 400px; border:1px solid #aaa; background: #fff; overflow: hidden; background-repeat: no-repeat; cursor:move;}
+.imageBox .thumbBox{position: absolute; top: 50%; left: 50%; width: 200px; height: 200px; margin-top: -100px; margin-left: -100px; box-sizing: border-box; border: 1px solid rgb(102, 102, 102); box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5); background: none repeat scroll 0% 0% transparent;}
+.imageBox .spinner{position: absolute; top: 0; left: 0; bottom: 0; right: 0; text-align: center; line-height: 400px; background: rgba(0,0,0,0.7);}
 
 
 /* --- Begin Block Styling --- */
@@ -168,14 +185,15 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 
 /* Sign In/Sign Up Pages --------- */
 .sisu{min-height:800px;}
-.sisu main{margin-bottom:100px;}
+.sisu .wrapper{position:relative; float:left; width:100%; height:auto;}
+.sisu main{margin-bottom:200px;}
 .sisu main .form-container{width:400px; margin-top:9%; position:relative;}
 .sisu main .form-container h1, .store-signup main .store-form-container h1{font-size:28px; line-height:32px; font-weight:100; width:100%; margin-bottom:60px; text-align:center;}
 .sisu main .form-container ul, .store-signup main .store-form-container ul{float:left; width:100%;}
 .sisu main .form-container ul li, .store-signup main .store-form-container ul li{position:relative; float:left; width:100%;}
-.sisu main .form-container ul li label, .store-signup main .store-form-container ul li label{position:absolute; top:0; left:20px; z-index:1; padding-right:20px; border-right:2px solid #171717; padding-top:14px; height:55px;}
-.sisu main .form-container ul li label i, .store-signup main .store-form-container ul li label i{color:#ccc; font-size:24px; line-height:24px;}
-.sisu main .form-container ul li input, .store-signup main .store-form-container ul li input{padding-left:78px;}
+.sisu main .form-container ul li label, .store-signup main .store-form-container form.icons ul li label{position:absolute; top:0; left:20px; z-index:1; padding-right:20px; border-right:2px solid #171717; padding-top:14px; height:55px;}
+.sisu main .form-container ul li label i, .store-signup main .store-form-container form.icons ul li label i{color:#ccc; font-size:24px; line-height:24px;}
+.sisu main .form-container ul li input, .store-signup main .store-form-container form.icons ul li input{padding-left:78px;}
 .sisu main .form-container ul li button, .store-signup main .store-form-container ul li button{width:100%; margin-top:20px;}
 .sisu main .forgot{margin-top:40px;}
 .sisu main .forgot ul li{width:100%; margin-bottom:20px; text-align:center;}
@@ -186,6 +204,7 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 
 /* Create Store Pages --------- */
 .store-signup section{padding:0;}
+.store-signup main{margin-bottom:100px;}
 .store-signup main .store-form-container{margin-top:9%; position:relative;}
 .store-signup main .store-form-container .paged ul{float:none; width:155px; margin:0 auto 50px auto;}
 .store-signup main .store-form-container .paged ul li{float:left; width:auto; height:auto; text-align:center; margin:0 10px;}
@@ -193,7 +212,17 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .store-signup main .store-form-container .paged ul li span a:hover{background:#fff;}
 .store-signup main .store-form-container .paged ul li.current span a{background:#fff;}
 
+.store-signup main .store-form-container form ul li{float:left; width:100%;}
 .store-signup main .store-form-container form ul li a{display:block; text-align:center; margin-top:20px;}
+.store-signup main .store-form-container form ul li label.forRadio, .store-signup main .store-form-container form ul li ol{float:left; width:100%;}
+.store-signup main .store-form-container form ul li label.forRadio{text-align:left;}
+.store-signup main .store-form-container form ul li ol{margin-left:0;}
+.store-signup main .store-form-container form ul li ol li{width:100px;}
+.store-signup main .store-form-container form ul li span{float:left; font-size:14px; line-height:16px; color:#959595; margin:16px 0 0 10px;}
+.store-signup main .store-form-container form ul li p{font-size:13px; line-height:16px; color:#959595; font-style:italic; margin-top:20px;}
+
+.store-signup main .store-form-container form ul li.upload label{margin-bottom:30px;}
+.store-signup main .store-form-container form ul li.upload a{margin-bottom:30px;}
 
 .store-signup main .store-form-container .prev-next{margin-top:60px;}
 .store-signup main .store-form-container .prev-next ul{float:none; margin:50px auto 0 auto; width:240px;}
@@ -207,7 +236,9 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .store-signup main .store-form-container .terms ul li a{font-size:13px; line-height:16px; color:#959595;}
 .store-signup main .store-form-container .terms ul li a:hover{color:#fff;}
 
-.store-signup main .store-form-container .disclaimer p{display:block; width:100%; text-align:center; color:#959595; font-size:13px; line-height:16px; margin-top:10px;}
+.store-signup main .store-form-container .disclaimer p{display:block; width:100%; text-align:center; color:#959595; font-size:13px; line-height:16px; margin-top:10px; margin-bottom:300px;}
+
+
 
 /* Forge - General --------- */
 .forge{background:#f4f4f4;}
