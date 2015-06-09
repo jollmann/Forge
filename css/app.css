@@ -30,7 +30,7 @@ div.row{float:none;}
 .table tbody tr td{border-bottom:2px solid #404040; text-align:left; vertical-align:middle; padding-top:16px; padding-bottom:16px; color:#959595; font-size:14px; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease;}
 .table tbody tr td a{color:#3bc102;}
 .table tbody tr td a:hover{color:#fff;}
-.table tbody tr td img{-webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
+.table tbody tr td img{-webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; margin-right:15px;}
 
 
 /* Loader - Loading --------- */
@@ -75,7 +75,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 input[type="file"]{color:transparent; text-align:center; height:42px; width:auto;}
 input[type="file"]::-webkit-file-upload-button{visibility:hidden;}
-input[type="file"]::before{content:'Upload an Image'; display:inline-block; color:#ccc;}
+input[type="file"]::before{content:'Upload an Image'; display:block; color:#ccc; max-width:155px; margin:0 auto; float:none;}
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus{
     color:#666;
 }
@@ -177,6 +177,14 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .sisu footer img{width:45px;}
 
 
+/* Forge - General --------- */
+.forge{background:#f4f4f4;}
+.forge section{padding:0;}
+.forge header{margin:0;}
+.forge .sidebar{background:#071b35; width:14.422%; height:115%; position:fixed; top:0; bottom:0;}
+.forge .content{min-height:655px; height:100%; width:85.578%; padding:30px;}
+
+
 /* --- Begin Page Styling --- */
 
 /* Forgot Password Page --------- */
@@ -230,7 +238,7 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 
 
 /* Account - Dashboard --------- */
-.account .subFeature .main-content .container{background:#101010; margin:0 2%; text-align:center; box-shadow:0px 2px 5px #000; width:46%; padding:65px 0 0 0; background: #2c7100; /* Old browsers */ background: -moz-linear-gradient(45deg,  #2c7100 0%, #3bc102 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#2c7100), color-stop(100%,#3bc102)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* IE10+ */ background: linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c7100', endColorstr='#3bc102',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.account .subFeature .main-content .container{margin:0 2%; text-align:center; box-shadow:0px 2px 5px #000; width:46%; padding:65px 0 0 0; background: #2c7100; /* Old browsers */ background: -moz-linear-gradient(45deg,  #2c7100 0%, #3bc102 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#2c7100), color-stop(100%,#3bc102)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* IE10+ */ background: linear-gradient(45deg,  #2c7100 0%,#3bc102 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c7100', endColorstr='#3bc102',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
 .account .subFeature .main-content .container .promo{background:#f4f4f4; margin-top:65px; padding:30px 0.9375rem;}
 .account .subFeature .main-content .container .promo p{font-size:13px; line-height:21px; color:#171717; text-transform:uppercase; font-weight:600;}
 .account .subFeature .main-content .container .promo p a{color:#2c7100;}
@@ -251,7 +259,25 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .edit-profile main .profileForm .avatar input[type="file"]{width:50%; float:left; margin:26px 0 0 20px;}
 
 
-/* Account - Order History --------- */
+/* Account - Order View --------- */
+.order .main-content .order-details .intro{border-bottom:1px solid #404040; padding-bottom:30px; margin-bottom:30px;}
+.order .main-content .order-details .intro h2{font-size:18px; color:#fff; text-align:left; font-weight:400; margin-bottom:10px;}
+.order .main-content .order-details .intro p{font-size:14px; line-height:22px; color:#959595;}
+.order .main-content .order-details .intro p span{color:#fff;}
+.order .main-content .order-details .shipping-container{margin:0 2%; width:46%; min-height:220px; margin-bottom:30px;}
+.order .main-content .order-details .shipping-container h3{font-size:18px; color:#fff; font-weight:400; margin-bottom:20px;}
+.order .main-content .order-details .shipping-container ul{float:left; width:100%;}
+.order .main-content .order-details .shipping-container ul li{float:left; width:100%; margin-bottom:10px;}
+.order .main-content .order-details .shipping-container ul li p{font-size:14px; line-height:22px; color:#959595;}
+.order .main-content .order-details .shipping-container ul li p span{color:#fff;}
+
+.order .main-content .order-totals{margin-top:40px;}
+.order .main-content .order-totals ul{float:right;}
+.order .main-content .order-totals ul li{float:left; width:100%; margin-bottom:10px;}
+.order .main-content .order-totals ul li span.amount-label, .order .main-content .order-totals ul li span.amount{font-size:16px; line-height:24px; color:#fff; float:right;}
+.order .main-content .order-totals ul li span.amount{color:#959595; margin-left:40px; min-width:100px; text-align:right;}
+.order .main-content .order-totals ul li span.grand.amount-label, .order .main-content .order-totals ul li span.grand.amount{margin-top:50px;}
+.order .main-content .order-totals ul li span.grand.amount{font-size:36px; font-weight:600; color:#3bc102;}
 
 
 
