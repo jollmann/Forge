@@ -18,6 +18,13 @@ footer{padding:0 40px;}
 div.row{float:none;}
 
 
+/* Flex Box Model --------- */
+.flex{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap;}
+.justify-left{-webkit-box-pack: left; -webkit-justify-content: left; -ms-flex-pack: left; justify-content: left;}
+.justify-center{-webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;}
+.justify-right{-webkit-box-pack: right; -webkit-justify-content: right; -ms-flex-pack: right; justify-content: right;}
+
+
 /* Tables --------- */
 .table{background:#171717; border:0;}
 .table thead{background:#404040;}
@@ -162,20 +169,45 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 /* Sign In/Sign Up Pages --------- */
 .sisu{min-height:800px;}
 .sisu main{margin-bottom:100px;}
-.sisu main .form-container{ width:400px; margin-top:9%; position:relative;}
-.sisu main .form-container h1{font-size:28px; line-height:32px; font-weight:100; width:100%; margin-bottom:60px; text-align:center;}
-.sisu main .form-container ul{float:left; width:100%;}
-.sisu main .form-container ul li{position:relative; float:left; width:100%;}
-.sisu main .form-container ul li label{position:absolute; top:0; left:20px; z-index:1; padding-right:20px; border-right:2px solid #171717; padding-top:14px; height:55px;}
-.sisu main .form-container ul li label i{color:#ccc; font-size:24px; line-height:24px;}
-.sisu main .form-container ul li input{padding-left:78px;}
-.sisu main .form-container ul li button{width:100%; margin-top:20px;}
+.sisu main .form-container{width:400px; margin-top:9%; position:relative;}
+.sisu main .form-container h1, .store-signup main .store-form-container h1{font-size:28px; line-height:32px; font-weight:100; width:100%; margin-bottom:60px; text-align:center;}
+.sisu main .form-container ul, .store-signup main .store-form-container ul{float:left; width:100%;}
+.sisu main .form-container ul li, .store-signup main .store-form-container ul li{position:relative; float:left; width:100%;}
+.sisu main .form-container ul li label, .store-signup main .store-form-container ul li label{position:absolute; top:0; left:20px; z-index:1; padding-right:20px; border-right:2px solid #171717; padding-top:14px; height:55px;}
+.sisu main .form-container ul li label i, .store-signup main .store-form-container ul li label i{color:#ccc; font-size:24px; line-height:24px;}
+.sisu main .form-container ul li input, .store-signup main .store-form-container ul li input{padding-left:78px;}
+.sisu main .form-container ul li button, .store-signup main .store-form-container ul li button{width:100%; margin-top:20px;}
 .sisu main .forgot{margin-top:40px;}
 .sisu main .forgot ul li{width:100%; margin-bottom:20px; text-align:center;}
 .sisu main .forgot ul li a{font-size:14px; line-height:22px;}
-.sisu footer{background:#1f1b1a; position:absolute; bottom:0; text-align:center; padding:20px 0; margin-top:0;}
-.sisu footer img{width:45px;}
+.sisu footer, .store-signup footer{background:#1f1b1a; position:absolute; bottom:0; text-align:center; padding:20px 0; margin-top:0;}
+.sisu footer img, .store-signup footer img{width:45px;}
 
+
+/* Create Store Pages --------- */
+.store-signup section{padding:0;}
+.store-signup main .store-form-container{margin-top:9%; position:relative;}
+.store-signup main .store-form-container .paged ul{float:none; width:155px; margin:0 auto 50px auto;}
+.store-signup main .store-form-container .paged ul li{float:left; width:auto; height:auto; text-align:center; margin:0 10px;}
+.store-signup main .store-form-container .paged ul li span a{width:10px; height:10px; display:block; background:rgba(255,255,255,.4); float:none; margin:0 auto; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
+.store-signup main .store-form-container .paged ul li span a:hover{background:#fff;}
+.store-signup main .store-form-container .paged ul li.current span a{background:#fff;}
+
+.store-signup main .store-form-container form ul li a{display:block; text-align:center; margin-top:20px;}
+
+.store-signup main .store-form-container .prev-next{margin-top:60px;}
+.store-signup main .store-form-container .prev-next ul{float:none; margin:50px auto 0 auto; width:240px;}
+.store-signup main .store-form-container .prev-next ul li{float:left; width:46%;}
+.store-signup main .store-form-container .prev-next ul li:first-child{margin-right:4%;}
+.store-signup main .store-form-container .prev-next ul li a{display:inline-block;}
+
+.store-signup main .store-form-container .terms ul{float:none; width:400px; margin:80px auto;}
+.store-signup main .store-form-container .terms ul li{float:left; width:auto; text-align:center; margin:0 10px;}
+.store-signup main .store-form-container .terms ul li span{width:6px; height:6px; display:block; background:#959595; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; margin-top:11px;}
+.store-signup main .store-form-container .terms ul li a{font-size:13px; line-height:16px; color:#959595;}
+.store-signup main .store-form-container .terms ul li a:hover{color:#fff;}
+
+.store-signup main .store-form-container .disclaimer p{display:block; width:100%; text-align:center; color:#959595; font-size:13px; line-height:16px; margin-top:10px;}
 
 /* Forge - General --------- */
 .forge{background:#f4f4f4;}
