@@ -30,8 +30,23 @@
                 reader.onload = function (e) {
                     $('#cover')
                         .attr('src', e.target.result)
-                        //.width(100%)
-                        //.height(200);
+                        .width(607)
+                        .height(227);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        
+        function readLogo(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#logo')
+                        .attr('src', e.target.result)
+                        .width(200)
+                        .height(200);
                 };
 
                 reader.readAsDataURL(input.files[0]);
@@ -78,28 +93,54 @@
                                         <a href="store-create-5.html"></a>
                                     </span>
                                 </li>
+                                <li>
+                                    <span>
+                                        <a href="store-create-6.html"></a>
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                         <form class="standard small-12 small-centered columns">
                             <ul>
                                 <li class="upload coverphoto">
-                                    <label class="label small-12" for="CoverPhoto">Your Store's Coverphoto (1600px X 800px)<em>*</em></label>
+                                    <label class="label small-12" for="CoverPhoto">Your Store's Coverphoto (1600px X 600px)<em>*</em></label>
                                     <div class="cropped small-12">
-                                        <img id="cover" src="../../img/avatar.jpg" alt="Coverphoto">
+                                        <img id="cover" src="../../img/default-cover-photo-avatar.png" alt="Cover Photo">
                                     </div>
                                     <div class="small-12">
-                                        <input type="file" class="btn green" onchange="readCover(this);">
+                                        <input type="file" class="btn trans" onchange="readCover(this);">
                                     </div>
+                                </li>
+                                <li class="upload profilePic">
+                                    <label class="label small-12" for="profilePic">Your Store's Logo (200px X 200px)<em>*</em></label>
+                                    <div class="cropped small-12">
+                                        <img id="logo" src="../../img/default-store-logo.png" alt="Store Logo">
+                                    </div>
+                                    <div class="small-12">
+                                        <input type="file" class="btn trans" onchange="readLogo(this);">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="label">Your Store's Website Address</label>
+                                    <input type="url" placeholder="e.g. http://www.yourstore.com" autocomplete="off">
+                                </li>
+                                <li>
+                                    <label class="label">Your Store's Twitter Handle</label>
+                                    <input type="text" placeholder="e.g. YourCompany" autocomplete="off">
+                                </li>
+                                <li>
+                                    <label class="label">Your Store's Facebook Page ID</label>
+                                    <input type="text" placeholder="e.g. YourCompany" autocomplete="off">
                                 </li>
                             </ul>
                         </form>
                         <div class="prev-next small-12">
                             <ul>
                                 <li>
-                                    <a class="btn trans" href="store-create-2.html"><i class="fi-arrow-left"></i> Back</a>
+                                    <a class="btn trans" href="store-create-3.html"><i class="fi-arrow-left"></i> Back</a>
                                 </li>
                                 <li>
-                                    <a class="btn green" href="store-create-4.html">Next <i class="fi-arrow-right"></i></a>
+                                    <a class="btn green" href="store-create-5.html">Next <i class="fi-arrow-right"></i></a>
                                 </li>
                             </ul>
                         </div>

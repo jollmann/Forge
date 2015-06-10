@@ -14,6 +14,7 @@ ul, ol, li{list-style:none;}
 ul li ul, ul li ol{margin:0; padding:0;}
 a{color:#fff; text-decoration:none;}
 a:hover{color:rgba(255,255,255,.6);}
+a.btn{display:inline-block;}
 div, header, main, footer, section{float:left; width:100%; height:auto;}
 section{padding:0 40px;}
 footer{padding:0 40px;}
@@ -206,7 +207,7 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .store-signup section{padding:0;}
 .store-signup main{margin-bottom:100px;}
 .store-signup main .store-form-container{margin-top:9%; position:relative;}
-.store-signup main .store-form-container .paged ul{float:none; width:155px; margin:0 auto 50px auto;}
+.store-signup main .store-form-container .paged ul{float:none; width:185px; margin:0 auto 50px auto;}
 .store-signup main .store-form-container .paged ul li{float:left; width:auto; height:auto; text-align:center; margin:0 10px;}
 .store-signup main .store-form-container .paged ul li span a{width:10px; height:10px; display:block; background:rgba(255,255,255,.4); float:none; margin:0 auto; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
 .store-signup main .store-form-container .paged ul li span a:hover{background:#fff;}
@@ -221,14 +222,21 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .store-signup main .store-form-container form ul li span{float:left; font-size:14px; line-height:16px; color:#959595; margin:16px 0 0 10px;}
 .store-signup main .store-form-container form ul li p{font-size:13px; line-height:16px; color:#959595; font-style:italic; margin-top:20px;}
 
+.store-signup main .store-form-container form ul li.upload{margin-bottom:40px;}
 .store-signup main .store-form-container form ul li.upload label{margin-bottom:30px;}
 .store-signup main .store-form-container form ul li.upload a{margin-bottom:30px;}
+.store-signup main .store-form-container form ul li.upload .cropped{margin-bottom:40px; text-align:center;}
+.store-signup main .store-form-container form ul li.upload img{float:none; margin:0 auto;}
+.store-signup main .store-form-container form ul li.upload input[type="file"]{width:100%;}
 
 .store-signup main .store-form-container .prev-next{margin-top:60px;}
 .store-signup main .store-form-container .prev-next ul{float:none; margin:50px auto 0 auto; width:240px;}
 .store-signup main .store-form-container .prev-next ul li{float:left; width:46%;}
 .store-signup main .store-form-container .prev-next ul li:first-child{margin-right:4%;}
-.store-signup main .store-form-container .prev-next ul li a{display:inline-block;}
+.store-signup main .store-form-container .prev-next ul li a{display:inline-block; text-align:center;}
+.store-signup main .store-form-container .prev-next.final ul{width:346px;}
+.store-signup main .store-form-container .prev-next.final ul li:first-child{margin-right:20px; width:106px;}
+.store-signup main .store-form-container .prev-next.final ul li:last-child{width:220px;}
 
 .store-signup main .store-form-container .terms ul{float:none; width:400px; margin:80px auto;}
 .store-signup main .store-form-container .terms ul li{float:left; width:auto; text-align:center; margin:0 10px;}
@@ -238,6 +246,12 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 
 .store-signup main .store-form-container .disclaimer p{display:block; width:100%; text-align:center; color:#959595; font-size:13px; line-height:16px; margin-top:10px; margin-bottom:300px;}
 
+.store-signup main .store-form-container .payments{text-align:center; padding:40px 0; margin-bottom:40px; background: #80a699; /* Old browsers */ background: -moz-linear-gradient(-45deg,  #80a699 0%, #0f2c3a 60%, #0f2c3a 100%, #171717 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#80a699), color-stop(60%,#0f2c3a), color-stop(100%,#0f2c3a), color-stop(100%,#171717)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(-45deg,  #80a699 0%,#0f2c3a 60%,#0f2c3a 100%,#171717 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(-45deg,  #80a699 0%,#0f2c3a 60%,#0f2c3a 100%,#171717 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(-45deg,  #80a699 0%,#0f2c3a 60%,#0f2c3a 100%,#171717 100%); /* IE10+ */ background: linear-gradient(135deg,  #80a699 0%,#0f2c3a 60%,#0f2c3a 100%,#171717 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80a699', endColorstr='#171717',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.store-signup main .store-form-container .tutorial{text-align:left; margin-bottom:40px;}
+.store-signup main .store-form-container .tutorial img{box-shadow:0 2px 20px #404040; margin:30px 0;}
+.store-signup main .store-form-container .tutorial h2{font-size:20px; line-height:24px; color:#fff; font-weight:400;}
+.store-signup main .store-form-container .tutorial h3{font-size:18px; line-height:24px; color:#ccc; font-weight:400;}
+.store-signup main .store-form-container .tutorial p{font-size:14px; line-height:22px; font-style:normal; font-weight:300; color:#959595;}
 
 
 /* Forge - General --------- */

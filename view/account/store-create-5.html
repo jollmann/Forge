@@ -19,7 +19,40 @@
     <link rel="stylesheet" href="../../css/app.css">
 
     <script src="../../js/vendor/modernizr.js"></script>
+    <script src="../../js/vendor/cropbox.js"></script>
+    
     <script src="../../js/app.js"></script>
+    <script>
+        function readCover(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#cover')
+                        .attr('src', e.target.result)
+                        .width(607)
+                        .height(227);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        
+        function readLogo(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#logo')
+                        .attr('src', e.target.result)
+                        .width(200)
+                        .height(200);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
     
 </head>
 <body class="store-signup sisu">
@@ -32,10 +65,10 @@
             <section>
                 <div class="row">
                     <div class="store-form-container small-12 small-centered large-centered medium-8 large-5 columns">
-                        <h1>Let's begin with the essentials.</h1>
+                        <h1>Enter in your store's policies.</h1>
                         <div class="paged small-12">
                             <ul>
-                                <li class="current">
+                                <li>
                                     <span>
                                         <a href="store-create-1.html"></a>
                                     </span>
@@ -55,7 +88,7 @@
                                         <a href="store-create-4.html"></a>
                                     </span>
                                 </li>
-                                <li>
+                                <li class="current">
                                     <span>
                                         <a href="store-create-5.html"></a>
                                     </span>
@@ -67,27 +100,25 @@
                                 </li>
                             </ul>
                         </div>
-                        <form class="icons small-12 small-centered columns">
+                        <form class="standard small-12 small-centered columns">
                             <ul>
                                 <li>
-                                    <label><i class="fi-magnifying-glass"></i></label>
-                                    <input type="search" placeholder="Search for a store URL" autocomplete="off">
+                                    <label class="label">Your Store's Shipping and Returns Policy<em>*</em></label>
+                                    <textarea placeholder="e.g. We ship UPS ground only. Returns must be made within 30 days of purchase."></textarea>
                                 </li>
                                 <li>
-                                    <a class="availability btn green">Check Availability</a>
-                                </li>
-                                <li>
-                                    <button class="btn trans">Make it yours</button>
+                                    <label class="label">Additional Store Policies or Directions</label>
+                                    <textarea placeholder="e.g. To place a custom order follow these directions."></textarea>
                                 </li>
                             </ul>
                         </form>
                         <div class="prev-next small-12">
                             <ul>
                                 <li>
-                                    <a class="btn trans" href="dashboard-shopper.html"><i class="fi-arrow-left"></i> Back</a>
+                                    <a class="btn trans" href="store-create-4.html"><i class="fi-arrow-left"></i> Back</a>
                                 </li>
                                 <li>
-                                    <a class="btn green" href="store-create-2.html">Next <i class="fi-arrow-right"></i></a>
+                                    <a class="btn green" href="store-create-6.html">Next <i class="fi-arrow-right"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -131,8 +162,13 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
-    <script src="../../js/vendor/jquery.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../../js/foundation.min.js"></script>
+    
+    <!-- Custom scripts for this page -->
+    <script src="../../js/foundation/foundation.reveal.js"></script>
+    
     <script>
         $(document).foundation();
         $(document).ready(function() {
@@ -143,6 +179,5 @@
 
         });
     </script>
-    
 </body>
 </html>
