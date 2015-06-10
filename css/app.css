@@ -302,7 +302,7 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .account .subFeature .sidebar .navigation ul li:last-child{border-bottom:0;}
 .account .subFeature .sidebar .navigation ul li a{font-size:14px; line-height:22px; color:#959595;}
 .account .subFeature .sidebar .navigation ul li a:hover{color:#fff;}
-.account .subFeature .sidebar .navigation ul li a i{float:right;}
+.account .subFeature .sidebar .navigation ul li a i{float:right; font-size:20px;}
 .account .subFeature .sidebar .storeNav{margin-top:40px;}
 
 .account .subFeature .page-title{margin-bottom:30px;}
@@ -324,7 +324,7 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .account .subFeature .main-content .container .sectionName h2{font-size:24px; line-height:24px; color:#fff; font-weight:500; margin-bottom:40px;}
 .account .subFeature .main-content .container .sectionLinks ul{float:left; width:100%;}
 .account .subFeature .main-content .container .sectionLinks ul li{float:left; width:25%;}
-.account .subFeature .main-content .container .sectionLinks ul li a i{font-size:20px;}
+.account .subFeature .main-content .container .sectionLinks ul li a i{font-size:28px;}
 
 
 /* Account - Profile --------- */

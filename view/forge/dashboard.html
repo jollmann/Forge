@@ -17,6 +17,7 @@
 
     <!-- If you are using the gem version, you need this only -->
     <link rel="stylesheet" href="../../css/app.css">
+    <link rel="stylesheet" href="../../css/forge.css">
 
     <script src="../../js/vendor/modernizr.js"></script>
     <script src="../../js/app.js"></script>
@@ -29,12 +30,45 @@
     </header>
     
     <main>
-        <section class="main">
-            <div class="sidebar columns show-for-medium-up">
-                Hello
+        <section class="main cbp-spmenu-push">
+            <div class="sidebar columns show-for-large-up">
+                <div class="store-details small-12">
+                    <div class="user-avatar">
+                        <img src="../../img/default-store-logo.png" alt="Store Logo">
+                        <a class="logout" href="#"><i class="fi-power"></i></a>
+                    </div>
+                    <div class="user small-12">
+                        <span class="name">Jacob Ollmann</span>
+                        <span class="store_name">AwesomeSauce</span>                            
+                    </div>
+                </div>
+                <div class="forgeNav small-12">
+                    <nav class="profile-nav small-12">
+                        <ul>
+                            <li class="columns">
+                                <a href="forge-profile.html">
+                                    <div class="store-avatar"><i class="fi-torso"></i></div>
+                                    <span>Back to Account</span>
+                                </a>
+                            </li>
+                            <li class="columns">
+                                <a href="#">
+                                    <i class=""fi-></i>
+                                    <span>Sign Out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="">
+                    
+                    </nav>
+                    <nav>
+                    
+                    </nav>
+                </div>
             </div>
             <div class="content small-12 columns">
-                There
+                <button id="showLeftPush">Show/Hide Left Push Menu</button>
             </div>
         </section> 
     </main>
@@ -46,6 +80,9 @@
     </div>
     <script src="../../js/vendor/jquery.js"></script>
     <script src="../../js/foundation.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    
     <script>
         $(document).foundation();
         $(document).ready(function() {
