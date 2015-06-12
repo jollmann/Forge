@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+    <meta charset="utf-8">
+    <!-- If you delete this meta tag World War Z will become a reality -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Manage your store - Forge at ZeroBars</title>
+
+    <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/foundation.css">
+    <link rel="stylesheet" href="../../css/foundation-icons.css">
+    <link rel="stylesheet" href="../../css/foundation.css">
+
+    <!-- If you are using the gem version, you need this only -->
+    <link rel="stylesheet" href="../../css/app.css">
+    <link rel="stylesheet" href="../../css/forge.css">
+
+    <script src="../../js/vendor/modernizr.js"></script>
+    <script src="../../js/app.js"></script>
+    
+</head>
+<body class="forge product">
+    
+    <header>
+        <!-- Insert mobile nav here -->
+    </header>
+    
+    <main>
+        <section>
+            <div class="sidebar columns show-for-large-up">
+                <div class="store-details small-12">
+                    <div class="user-avatar">
+                        <img src="../../img/default-store-logo.png" alt="Store Logo">
+                        <a class="logout" href="#"><i class="fi-power"></i></a>
+                    </div>
+                    <div class="user small-12">
+                        <span class="name">Jacob Ollmann</span>
+                        <span class="store_name">AwesomeSauce</span>                            
+                    </div>
+                </div>
+                <div class="forgeNav small-12">
+                    <nav class="profile-nav small-12">
+                        <ul>
+                            <li class="columns">
+                                <a href="forge-profile.html">
+                                    <div class="store-avatar"><i class="fi-torso"></i></div>
+                                    <span>Personal Profile</span>
+                                </a>
+                            </li>
+                            <li class="columns">
+                                <a class="logout" href="#">Sign Out</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="settings">
+                        <ul>
+                            <li>
+                                <h3>Manage</h3>
+                            </li>
+                            <li class="columns">
+                                <a class="dashboard" href="#">Store Dashboard</a>
+                            </li>
+                            <li class="columns">
+                                <a class="orders" href="orders.html">Orders</a>
+                            </li>
+                            <li class="columns">
+                                <a class="products" href="products.html">Products</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="settings">
+                        <ul>
+                            <li>
+                                <h3>Settings</h3>
+                            </li>
+                            <li class="columns">
+                                <a class="setting" href="#">Store Settings</a>
+                            </li>
+                            <li class="columns">
+                                <a class="policies" href="#">Policies</a>
+                            </li>
+                            <li class="columns">
+                                <a class="payment" href="#">Payment</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="settings">
+                        <ul>
+                            <li>
+                                <h3>Learn</h3>
+                            </li>
+                            <li class="columns">
+                                <a class="base" href="#">Basecamp</a>
+                            </li>
+                            <li class="columns">
+                                <a class="help" href="#">Help</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content small-12 columns">
+                <div class="row">
+                    <div class="forge-header small-12">
+                        <div class="title small-12 medium-6">
+                            <h1>Add Product</h1>
+                        </div>
+                        <div class="ctas small-12 medium-6">
+                            <ul>
+                                <li>
+                                    <a class="btn trans mail" href="mailto:support@zero-bars.com"><i class="fi-mail"></i></a>
+                                </li>
+                                <li>
+                                    <button type="submit" class="btn green">Save</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-nav small-12">
+                        <ul class="tabs" data-tab>
+                            <li class="small-6 medium-3">
+                                <a class="tab-link active" href="#panel1">Details</a>
+                            </li>
+                            <li class="small-6 medium-3">
+                                <a class="tab-link" href="#panel2">Images</a>
+                            </li>
+                            <li class="small-6 medium-3">
+                                <a class="tab-link" href="#panel3">Categories</a>
+                            </li>
+                            <li class="small-6 medium-3">
+                                <a class="tab-link" href="#panel4">Shipping</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="small-12 dropzone">
+                        <div class="tabs-content small-12">
+                            <div class="content active small-12" id="panel1">
+                                <div class="small-6 columns">
+                                    <ul>
+                                        <li>
+                                            <label class="label">Name<em>*</em></label>
+                                            <input type="text" autocomplete="off">
+                                        </li>
+                                        <li>
+                                            <label class="label">Description<em>*</em></label>
+                                            <textarea></textarea>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="small-6 columns">
+                                    <ul>
+                                        <li>
+                                            <label class="label">Condition<em>*</em></label>
+                                            <select class="larger">
+                                                <option></option>
+                                                <option value="new">New</option>
+                                                <option value="used">Used</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label class="label">Handmade or Resale<em>*</em></label>
+                                            <select class="larger">
+                                                <option></option>
+                                                <option value="handmade">Handemade / Custom Made</option>
+                                                <option value="resale">Resale Item</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label class="label">Color<em>*</em></label>
+                                            <select class="larger">
+                                                <option></option>
+                                                <option value="red">Red</option>
+                                                <option value="blue">Blue</option>
+                                                <option value="green">Green</option>
+                                                <option value="yellow">Yellow</option>
+                                                <option value="pink">Pink</option>
+                                                <option value="black">Black</option>  
+                                                <option value="Grey">Grey</option>
+                                                <option value="blaze">Blaze Orange</option>
+                                                <option value="orange">Orange</option>
+                                                <option value="camo">Camo</option>
+                                                <option value="purple">Purple</option>
+                                                <option value="nocolor">No Color</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content small-12" id="panel2">
+                                <div id="uploadme" class="fallback">
+                                    <h2>Drag files anywhere in here to upload</h2>
+                                    <span>or</span>
+                                    <input name="file" type="file" multiple />
+                                    <p>Maximum upload file size: 8 MB.</p>
+                                </div>
+                            </div>
+                            <div class="content small-12" id="panel3">
+                                Categories
+                            </div>
+                            <div class="content small-12" id="panel4">
+                                Shipping
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section> 
+    </main>
+    
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <script src="../../js/vendor/jquery.js"></script>
+    <script src="../../js/foundation.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="../../js/vendor/canvasjs.min.js"></script>
+    <script src="../../js/foundation/foundation.tab.js"></script>
+    <script src="../../js/vendor/dropzone.js"></script>
+    
+    <script>
+        $(document).foundation();
+            
+        $(document).ready(function() {
+	
+            setTimeout(function(){
+                $('body').addClass('loaded');
+            }, 2000);
+            
+            $('.tab-link').on('click', function(){
+                $('.tab-link').removeClass('active');
+                $(this).addClass('active');
+            });
+            
+            Dropzone.autoDiscover = false;
+            
+            $("#uploadme").dropzone({
+                paramName: 'photos',
+                url: 'upload.php',
+                dictDefaultMessage: "Drag your images",
+                clickable: true,
+                enqueueForUpload: true,
+                maxFilesize: 1,
+                uploadMultiple: false,
+                addRemoveLinks: true
+            });
+
+        });
+    </script>
+    
+</body>
+</html>

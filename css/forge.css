@@ -17,6 +17,10 @@ a:hover{opacity:.6;}
 .btn{font-size:14px; line-height:22px; color:#9098a3; border-radius:50px; cursor:pointer; font-weight:300; letter-spacing:2px; background:transparent; text-transform:uppercase; padding:8px 20px; margin-bottom:0; text-shadow:none; -webkit-transition:all 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955); -moz-transition:all 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955); transition:all 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);}
 .btn:hover{background:none; color:#9098a3; -webkit-transform: scale(1.1) translateZ(0); -moz-transform: scale(1.1) translateZ(0); -ms-transform: scale(1.1) translateZ(0); -o-transform: scale(1.1) translateZ(0); transform: scale(1.1) translateZ(0);}
 
+/* Primary Green Button State -------- */
+.btn.green{color:#fff;}
+.btn.green:hover{border:3px solid #2c7100; background:#2c7100; opacity:1;}
+
 /* Secondary Transparent Button State -------- */
 .btn.trans{border:2px solid #9098a3;}
 
@@ -31,13 +35,14 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
     color:#666;
 }
 select{border:1px solid #e8ebf1; background:url('../img/select-down-arrow-grey.png') 98% 7px no-repeat; color:#666;}
+select.larger{padding:12px 17px 13px; height:55px; background-position:98% 17px;}
 
 
 
 /* Global Blocks -------- */
 
 /* Sidebar -------- */
-.forge .sidebar{background:#02142c; width:14.422%; height:115%; position:fixed; top:0; bottom:0; padding:0; overflow:auto;}
+.forge .sidebar{background:#1d1f21; width:14.422%; height:115%; position:fixed; top:0; bottom:0; padding:0; overflow:auto;}
 .forge .sidebar .store-details{padding:40px 0 20px 0; border-bottom:1px solid rgba(255,255,255,.3);}
 .forge .sidebar .store-details .user-avatar{position:relative; width:80px; height:80px; margin:0 auto; float:none;}
 .forge .sidebar .store-details .user-avatar img{width:80px; height:80px; display:block; margin:0 auto; border:3px solid rgba(255,255,255,.4); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
@@ -94,13 +99,26 @@ select{border:1px solid #e8ebf1; background:url('../img/select-down-arrow-grey.p
 .table tbody tr td img{-webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; margin-right:15px;}
 
 
+/* Tabs --------- */
+.forge .tabs{float:left; width:100%;}
+.forge .tabs li{float:left; text-align:center; height:54px; border-bottom:1px solid #e8ebf1;}
+.forge .tabs li a{padding:16px 20px; display:block; text-align:center; color:#576474; font-size:14px; line-height:22px; text-transform:uppercase; font-weight:600; border-bottom:3px solid #fff;}
+.forge .tabs li a.active{border-bottom:5px solid #3bc102;}
+.forge .tabs li a:hover{background:#e8ebf1;}
+.forge .tabs li a:focus{outline:0;}
+.forge .tabs-content .content{width:100%; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease;}
+
+
 /* Main Content -------- */
 .forge .content{min-height:655px; height:100%; width:85.578%; padding:30px;}
 
+/* Header -------- */
 .forge .content .forge-header{margin-bottom:30px;}
 .forge .content .forge-header h1{font-size:40px; line-height:42px; font-weight:300; text-align:left;}
 .forge .content .forge-header .ctas ul li{float:right;}
-.forge .content .forge-header .ctas ul li a i{font-size:22px;}
+.forge .content .forge-header .ctas ul li:first-child{margin-left:20px;}
+.forge .content .forge-header .ctas ul li a.mail{padding-bottom:4px;}
+.forge .content .forge-header .ctas ul li a.mail i{font-size:22px;}
 
 
 /* Pulse Stats -------- */
@@ -185,10 +203,20 @@ select{border:1px solid #e8ebf1; background:url('../img/select-down-arrow-grey.p
 
 .products .content .low-stock{margin:40px 0;}
 .products .content h2{font-size:18px; line-height:24px; font-weight:400; text-transform:uppercase; margin-bottom:20px;}
+.products .content .activity h2{margin-bottom:0;}
+.products .content .mock-table .tbody .trow a .info{width:13%;}
+.products .content .mock-table .tbody .trow a .name{width:35%;}
+.products .content .mock-table .tbody .trow a .edit p{text-align:center;}
+.products .forge-header .ctas ul li a.btn.green i{font-size:14px;}
+.products .content .mock-table .tnav .ctas{margin:30px 0;}
+.products .content .mock-table .tnav .ctas ul{float:left; width:100%;}
+.products .content .mock-table .tnav .ctas ul li{float:right;}
 
 
+/* Add/Edit Product -------- */
 
-
+.product .form-nav{margin:30px 0;}
+.product .fallback{border:4px dashed #e8ebf1; height:200px; text-align:center;}
 
 
 
