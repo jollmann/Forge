@@ -22,7 +22,7 @@ a:hover{opacity:.6;}
 
 /* Input -------- */
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea{
-    background:#483f3e; display:block; width:100%; height:55px; padding:12px 17px 13px; font-size:14px; line-height:22px; color:#ccc; border:0;
+    background:#fff; color:#346b83; border:1px solid #e8ebf1; box-shadow:none; border-color:#e8ebf1;
 }
 input[type="file"]{color:transparent; text-align:center; height:42px; width:auto;}
 input[type="file"]::-webkit-file-upload-button{visibility:hidden;}
@@ -30,6 +30,7 @@ input[type="file"]::before{content:'Upload an Image'; display:block; color:#ccc;
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus{
     color:#666;
 }
+select{border:1px solid #e8ebf1; background:url('../img/select-down-arrow-grey.png') 98% 7px no-repeat; color:#666;}
 
 
 
@@ -45,6 +46,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
 .forge .sidebar .store-details .user{margin-top:15px;}
 .forge .sidebar .store-details .user span{color:#9098a3; display:block; width:100%; font-size:14px; line-height:22px; text-align:center; margin-bottom:10px; overflow:hidden; float:left; white-space:nowrap; text-overflow:ellipsis;}
 .forge .sidebar .store-details .user span:last-child{margin-bottom:0; font-style:italic; color:#fff; font-weight:100;}
+.forge .sidebar .forgeNav{min-height:827px;}
 .forge .sidebar .forgeNav nav{padding:30px 0; float:left; width:100%; border-bottom:1px solid rgba(255,255,255,.3);}
 .forge .sidebar .forgeNav nav ul{float:left; width:100%;}
 .forge .sidebar .forgeNav nav ul li{float:left; width:100%; padding:10px 0.9375rem; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease;}
@@ -72,7 +74,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
 /* Pagination --------- */
 .pagination ul li{color:#9098a3;}
 .pagination ul li:first-child{padding-left:0;}
-.pagination ul li span{color:#fff; background-color: #6a35c8; background-image: -webkit-linear-gradient(#6a35c8, #27e9ff); background-image: linear-gradient(#6a35c8, #27e9ff); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
+.pagination ul li span{color:#fff; padding:15px 20px 10px 20px; background-color: #6a35c8; background-image: -webkit-linear-gradient(#6a35c8, #27e9ff); background-image: linear-gradient(#6a35c8, #27e9ff); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
 .pagination ul li a{color: #9098a3;}
 .pagination ul li a:hover{color:#9098a3;}
 .pagination ul li a.previous, .pagination ul li a.next{border:2px solid #9098a3; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
@@ -101,39 +103,57 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
 .forge .content .forge-header .ctas ul li a i{font-size:22px;}
 
 
+/* Pulse Stats -------- */
+.forge .content .pulse{background:#e8ebf1; padding:20px;}
+.forge .content .pulse .stats{background:#fff; text-align:center; padding:20px 0; margin:0 2%; width:29.3%;}
+.forge .content .pulse .stats p{font-size:28px; font-weight:600; margin-bottom:10px;}
+
+
+/* Mock Tables -------- */
+.forge .content .mock-table{background:#fff;}
+.forge .content .mock-table .thead{background:#e8ebf1; padding:15px 20px; text-align:left;}
+.forge .content .mock-table .thead h3{color:#576474; font-weight:600; font-size:13px; line-height:14px; text-transform:uppercase;}
+.forge .content .mock-table .tbody .trow{border-bottom:1px solid #e8ebf1;}
+.forge .content .mock-table .tbody .trow a{display:block; float:left; height:auto; padding:16px 20px;}
+.forge .content .mock-table .tbody .trow a:hover{background:#f6f8f8; opacity:1;}
+.forge .content .mock-table .tbody .trow a .info{width:15%; float:left;}
+.forge .content .mock-table .tbody .trow a .product{width:35%}
+.forge .content .mock-table .tbody .trow a .info p{float:left; width:100%; padding:5px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:14px; line-height:22px;}
+.forge .content .mock-table .tbody .trow a .info p img{width:35px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; margin-right:15px;}
+.forge .content .mock-table .tbody .trow a .status p{border:1px solid #e8ebf1; width:90%; text-align:center; color:#fff; font-weight:600;}
+.forge .content .mock-table .tbody .trow a.pending p{opacity:.3;}
+.forge .content .mock-table .tbody .trow a.pending .status p{border:1px solid rgba(245,194,36,1); color:rgba(245,194,36,1); opacity:1;}
+.forge .content .mock-table .tbody .trow a.shipped .status p{color:#346b83;}
+.forge .content .mock-table .tbody .trow a.approved .status p{border:1px solid rgba(2,185,27,1); color:rgba(2,185,27,1);}
+.forge .content .mock-table .tbody .trow a.declined .status p{border:1px solid rgba(211,0,0,1); color:rgba(211,0,0,1);}
+
+.forge .content .mock-table .pushmenu{background: #fff; width: 30%; height: 100%; top: 0; z-index: 1000; position:fixed; border-left:1px solid #e8ebf1;}
+.forge .content .mock-table .pushmenu-left{right: -30%;}
+.forge .content .pushmenu-left.pushmenu-open{right: 0;}
+.forge .content .pushmenu-push{overflow-x: hidden; position: relative; left: 0;}
+.forge .content .pushmenu-push-toright{right: 30%;}
+.forge .content .pushmenu, .forge .content .pushmenu-push{-webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease;}
+
+.forge .content .little-brudo .thead{background:#e8ebf1; padding:10px 20px;}
+.forge .content .little-brudo .thead p{color:#576474; font-weight:600; font-size:13px; line-height:14px; text-transform:uppercase;}
+.forge .content .little-brudo .tbody ul{float:left; width:100%; display:block; max-height:342px; overflow-y:auto;}
+.forge .content .little-brudo .tbody ul li{float:left; width:100%;}
+.forge .content .little-brudo .tbody ul li:nth-of-type(even){background:#f5f8fd;}
+.forge .content .little-brudo .tbody ul li a{display:block; float:left; width:100%; height:auto; padding:6px 20px;}
+.forge .content .little-brudo .tbody ul li a:hover{opacity:1;}
+.forge .content .little-brudo .tbody ul li a p{float:left; width:100%; padding:5px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:14px; line-height:22px;}
+.forge .content .little-brudo .tbody ul li a p img{width:35px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; margin-right:15px;}
+
+
+
 /* Individual Pages -------- */
 
 /* Orders -------- */
-.orders .content .pulse{background:#e8ebf1; padding:20px;}
-.orders .content .pulse .stats{background:#fff; text-align:center; padding:20px 0; margin:0 2%; width:29.3%;}
-.orders .content .pulse .stats p{font-size:28px; font-weight:600; margin-bottom:10px;}
-
-.orders .content .orders-table{background:#fff;}
-.orders .content .orders-table .thead{background:#e8ebf1; padding:15px 20px; text-align:left;}
-.orders .content .orders-table .thead h3{color:#576474; font-weight:600; font-size:13px; line-height:14px; text-transform:uppercase;}
-.orders .content .orders-table .tbody .trow{border-bottom:1px solid #e8ebf1;}
-.orders .content .orders-table .tbody .trow a{display:block; float:left; height:auto; padding:16px 20px;}
-.orders .content .orders-table .tbody .trow a:hover{background:#f6f8f8; opacity:1;}
-.orders .content .orders-table .tbody .trow a .info{width:15%; float:left;}
-.orders .content .orders-table .tbody .trow a .product{width:35%}
-.orders .content .orders-table .tbody .trow a .info p{float:left; width:100%; padding:5px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:14px; line-height:22px;}
-.orders .content .orders-table .tbody .trow a .info p img{width:35px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; margin-right:15px;}
-.orders .content .orders-table .tbody .trow a .status p{border:1px solid #e8ebf1; width:90%; text-align:center; color:#fff; font-weight:600;}
-.orders .content .orders-table .tbody .trow a.pending p{opacity:.3;}
-.orders .content .orders-table .tbody .trow a.pending .status p{background:rgba(245,194,36,1); opacity:1;}
-.orders .content .orders-table .tbody .trow a.approved .status p{background:rgba(2,185,27,1);}
-.orders .content .orders-table .tbody .trow a.declined .status p{background:rgba(211,0,0,1);}
-
-.orders .content .orders-table .pushmenu{background: #fff; width: 30%; height: 100%; top: 0; z-index: 1000; position:fixed; border-left:1px solid #e8ebf1;}
-.orders .content .orders-table .pushmenu-left{right: -30%;}
-.orders .content .pushmenu-left.pushmenu-open{right: 0;}
-.orders .content .pushmenu-push{overflow-x: hidden; position: relative; left: 0;}
-.orders .content .pushmenu-push-toright{right: 30%;}
-.orders .content .pushmenu, .orders .content .pushmenu-push{-webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease;}
 
 .orders .content .activity-detail .analysis, .orders .content .activity-detail .date, .orders .content .activity-detail .product, .orders .content .activity-detail .status, .orders .content .activity-detail .breakdown, .orders .content .activity-detail .total, .orders .content .activity-detail .customer, .orders .content .activity-detail .shipping{padding-left:10%;}
 .orders .content .activity-detail .analysis{text-align:center; padding:10px; margin-bottom:20px;}
-.orders .content .activity-detail .analysis p{font-size:14px; line-height:22px; font-weight:600; color:#fff;}
+.orders .content .activity-detail .analysis a{float:left; width:36px; margin:0 10px; color:#fff; font-size:24px;}
+.orders .content .activity-detail .analysis p{font-size:14px; line-height:22px; font-weight:600; color:#fff; margin-top:7px;}
 .orders .content .activity-detail .analysis.low{background:rgba(2,185,27,1);}
 .orders .content .activity-detail .analysis.medium{background:rgba(245,194,36,1);}
 .orders .content .activity-detail .analysis.high{background:background:rgba(211,0,0,1);}
@@ -155,11 +175,16 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
 .orders .content .activity-detail .customer .small-6{padding-right:10px;}
 .orders .content .activity-detail .customer p{font-size:12px; line-height:16px; float:left; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .orders .content .activity-detail .customer a{font-size:12px; line-height:16px; color:#346b83; float:left; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;} 
+.orders .content .activity-detail .shipping{padding-bottom:20px; text-align:left;}
+.orders .content .activity-detail .shipping form label{text-transform:uppercase; font-size:12px; line-height:14px; font-weight:600; margin-bottom:5px;}
+.orders .content .activity-detail .shipping form input, .orders .content .activity-detail .shipping form select{width:95%;}
+.orders .content .activity-detail .shipping form button.green{color:#fff; margin-right:10px;}
 
 
+/* Products -------- */
 
-
-
+.products .content .low-stock{margin:40px 0;}
+.products .content h2{font-size:18px; line-height:24px; font-weight:400; text-transform:uppercase; margin-bottom:20px;}
 
 
 
