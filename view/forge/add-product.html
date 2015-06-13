@@ -143,11 +143,15 @@
                                     <ul>
                                         <li>
                                             <label class="label">Name<em>*</em></label>
-                                            <input type="text" autocomplete="off">
+                                            <input placeholder="e.g. Name of your product" type="text" autocomplete="off">
                                         </li>
                                         <li>
                                             <label class="label">Description<em>*</em></label>
-                                            <textarea></textarea>
+                                            <textarea placeholder="e.g. A description of your product"></textarea>
+                                        </li>
+                                        <li>
+                                            <label class="label">Price<em>*</em></label>
+                                            <input placeholder="U.S. Dollars" type="text" autocomplete="off">
                                         </li>
                                     </ul>
                                 </div>
@@ -156,7 +160,7 @@
                                         <li>
                                             <label class="label">Condition<em>*</em></label>
                                             <select class="larger">
-                                                <option></option>
+                                                <option selected="selected" disabled="disabled">Please Choose...</option>
                                                 <option value="new">New</option>
                                                 <option value="used">Used</option>
                                             </select>
@@ -164,7 +168,7 @@
                                         <li>
                                             <label class="label">Handmade or Resale<em>*</em></label>
                                             <select class="larger">
-                                                <option></option>
+                                                <option selected="selected" disabled="disabled">Please Choose...</option>
                                                 <option value="handmade">Handemade / Custom Made</option>
                                                 <option value="resale">Resale Item</option>
                                             </select>
@@ -172,7 +176,7 @@
                                         <li>
                                             <label class="label">Color<em>*</em></label>
                                             <select class="larger">
-                                                <option></option>
+                                                <option selected="selected" disabled="disabled">Please Choose...</option>
                                                 <option value="red">Red</option>
                                                 <option value="blue">Blue</option>
                                                 <option value="green">Green</option>
@@ -188,22 +192,138 @@
                                                 <option value="other">Other</option>
                                             </select>
                                         </li>
+                                        <li>
+                                            <label class="label">Inventory<em>*</em></label>
+                                            <input placeholder="e.g. How many do you have available for sale?" type="text" autocomplete="off">
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="content small-12" id="panel2">
                                 <div id="uploadme" class="fallback">
-                                    <h2>Drag files anywhere in here to upload</h2>
+                                    <h2>Drag images anywhere in here to upload</h2>
                                     <span>or</span>
                                     <input name="file" type="file" multiple />
-                                    <p>Maximum upload file size: 8 MB.</p>
+                                    <p>Maximum upload file size: 1 MB.</p>
+                                    <ul>
                                 </div>
                             </div>
                             <div class="content small-12" id="panel3">
-                                Categories
+                                <div class="small-6 columns">
+                                    <ul>
+                                        <li>
+                                            <label class="label" for="level1">What type of product is it?<em>*</em></label>
+                                            <select id="level1" name="level1" class="larger">
+                                                <option selected="selected" disabled="disabled">Please Choose...</option>								
+                                                <option value="3">Camp &amp; Hike</option>							
+                                                <option value="295">Fishing</option>								
+                                                <option value="313">Hunting</option>							
+                                                <option value="314">Water</option>		
+                                                <option value="315">Climbing</option>							
+                                                <option value="316">Cycling</option>						
+                                                <option value="317">Snow</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label class="label" for="level1">Choose a sub category<em>*</em></label>
+                                            <select id="level1" name="level1" class="larger">
+                                                <option selected="selected" disabled="disabled">Please Choose...</option>								
+                                                <option value="3">Sub Category</option>							
+                                                <option value="295">Sub Category</option>								
+                                                <option value="313">Sub Category</option>							
+                                                <option value="314">Sub Category</option>		
+                                                <option value="315">Sub Category</option>							
+                                                <option value="316">Sub Category</option>						
+                                                <option value="317">Sub Category</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label class="label" for="level1">Choose a sub category<em>*</em></label>
+                                            <select id="level1" name="level1" class="larger">
+                                                <option selected="selected" disabled="disabled">Please Choose...</option>								
+                                                <option value="3">Sub Category</option>							
+                                                <option value="295">Sub Category</option>								
+                                                <option value="313">Sub Category</option>							
+                                                <option value="314">Sub Category</option>		
+                                                <option value="315">Sub Category</option>							
+                                                <option value="316">Sub Category</option>						
+                                                <option value="317">Sub Category</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label class="label" for="level1">Choose a sub category<em>*</em></label>
+                                            <select id="level1" name="level1" class="larger">
+                                                <option selected="selected" disabled="disabled">Please Choose...</option>								
+                                                <option value="3">Sub Category</option>							
+                                                <option value="295">Sub Category</option>								
+                                                <option value="313">Sub Category</option>							
+                                                <option value="314">Sub Category</option>		
+                                                <option value="315">Sub Category</option>							
+                                                <option value="316">Sub Category</option>						
+                                                <option value="317">Sub Category</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="small-6 columns">
+                                    <ul>
+                                        <li>
+                                            <label class="label" for="level1">Attribute 1<em>*</em></label>
+                                            <select id="level1" name="level1" class="larger">
+                                                <option selected="selected" disabled="disabled">Please Choose...</option>								
+                                                <option value="3">Attribute Value</option>							
+                                                <option value="295">Attribute Value</option>								
+                                                <option value="313">Attribute Value</option>							
+                                                <option value="314">Attribute Value</option>		
+                                                <option value="315">Attribute Value</option>							
+                                                <option value="316">Attribute Value</option>						
+                                                <option value="317">Attribute Value</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label class="label" for="level1">Attribute 2<em>*</em></label>
+                                            <select id="level1" name="level1" class="larger">
+                                                <option selected="selected" disabled="disabled">Please Choose...</option>								
+                                                <option value="3">Attribute Value</option>							
+                                                <option value="295">Attribute Value</option>								
+                                                <option value="313">Attribute Value</option>							
+                                                <option value="314">Attribute Value</option>		
+                                                <option value="315">Attribute Value</option>							
+                                                <option value="316">Attribute Value</option>						
+                                                <option value="317">Attribute Value</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label class="label" for="level1">Attribute 3<em>*</em></label>
+                                            <select id="level1" name="level1" class="larger">
+                                                <option selected="selected" disabled="disabled">Please Choose...</option>								
+                                                <option value="3">Attribute Value</option>							
+                                                <option value="295">Attribute Value</option>								
+                                                <option value="313">Attribute Value</option>							
+                                                <option value="314">Attribute Value</option>		
+                                                <option value="315">Attribute Value</option>							
+                                                <option value="316">Attribute Value</option>						
+                                                <option value="317">Attribute Value</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="content small-12" id="panel4">
-                                Shipping
+                                <div class="small-6 columns">
+                                    <ul>
+                                        <li>
+                                            <li>
+                                                <label class="label">Shipping Cost<em>*</em></label>
+                                                <input placeholder="U.S. Dollars" type="text" autocomplete="off">
+                                            </li>
+                                            <li>
+                                                <label class="label">Weight<em>*</em></label>
+                                                <input placeholder="e.g. 1.25 lbs." type="text" autocomplete="off">
+                                            </li>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -242,15 +362,45 @@
             Dropzone.autoDiscover = false;
             
             $("#uploadme").dropzone({
+                acceptedFiles: 'image/*',
                 paramName: 'photos',
                 url: 'upload.php',
-                dictDefaultMessage: "Drag your images",
                 clickable: true,
-                enqueueForUpload: true,
+                autoProcessQueue: true,
                 maxFilesize: 1,
-                uploadMultiple: false,
-                addRemoveLinks: true
+                uploadMultiple: true,
+                addRemoveLinks: true,
+                thumbnailWidth: 120,
+                thumbnailHeight: 120,
+                previewTemplate: "<div class=\"dz-preview dz-file-preview\" >\n     <div class=\"dz-image\">\n   <img data-dz-thumbnail />\n   <div class=\"radio-white\">\n    <div class=\"radio-container\">\n    <input type=\"radio\" name=\"primary\" id=\"primary\">\n    <label for=\"primary\"></label>\n    </div>\n    </div>\n    </div>\n    </div>"
             });
+            
+            function getNextCat(topCat) {
+                $.ajax({
+                    url  	:   "http://dev.zero-bars.com/marketplace/marketplaceaccount/categorytree/",
+                    type 	:   "POST",
+                    data 	:   {CID:topCat, ML:'0', CATS:""},
+                    dataType:   "html",
+                    success :   function(content){
+                    var newdata=  $.parseJSON(content);
+                    var len= newdata.length;				
+                    if (len > 1){
+                        position++;
+                        var label = $("<label></label>").text("What Type?").attr("for", position+"category"); 
+                        var picker = $("<div></div>").attr("class", "picker").append($("<select></select>").attr("id", position+"category").attr("name", position+"category").attr("class", "input select"));
+                    if (position < 4){ $('#cats .cats1').append(label, picker); $('select#'+position+'category').append($("<option></option>").text("Choose a type").attr("selected", "selected").attr("disabled", "disabled"));}
+                    else {	$('#cats .cats2').append(label, picker); $('select#'+position+'category').append($("<option></option>").text("Choose a type").attr("selected", "selected").attr("disabled", "disabled")); }
+                    for(k=0;k<len; k++){    
+                        id=newdata[k].id;
+                        nam=newdata[k].name;
+                        if (nam !== "All"){
+                        $('select#'+position+'category').append($('<option></option>').text(nam).attr("value", id));
+                        }						
+                    }
+                    }
+                    }
+                });
+            }
 
         });
     </script>
