@@ -23,14 +23,14 @@
     <script src="../../js/app.js"></script>
     
 </head>
-<body class="forge dashboard">
+<body class="forge payment">
     
     <header>
         <!-- Insert mobile nav here -->
     </header>
     
     <main>
-        <section class="main cbp-spmenu-push">
+        <section>
             <div class="sidebar columns show-for-large-up">
                 <div class="store-details small-12">
                     <div class="user-avatar">
@@ -104,49 +104,54 @@
                 </div>
             </div>
             <div class="content small-12 columns">
-                <div class="forge-header small-12">
-                    <div class="title small-12 medium-6">
-                        <h1>Dashboard</h1>
+                <div class="row">
+                    <div class="forge-header small-12">
+                        <div class="title small-12 medium-6">
+                            <h1>Payment Account</h1>
+                        </div>
+                        <div class="ctas small-12 medium-6">
+                            <ul>
+                                <li>
+                                    <a class="btn trans mail" href="mailto:support@zero-bars.com"><i class="fi-mail"></i></a>
+                                </li>
+                                <li>
+                                    <button type="submit" class="btn green">Stripe Account</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="ctas small-12 medium-6">
-                        <ul>
-                            <li>
-                                <a class="btn trans mail" href="mailto:support@zero-bars.com"><i class="fi-mail"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="pulse small-12">
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-torsos-all"></i>
-                        <p>4</p>
-                        <span>new customers</span>
-                    </div>
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-pricetag-multiple"></i>
-                        <p>8</p>
-                        <span>total products sold</span>
-                    </div>
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-download"></i>
-                        <p>4</p>
-                        <span>total orders</span>
-                    </div>
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-shopping-cart"></i>
-                        <p>$26.94</p>
-                        <span>average order value</span>
-                    </div>
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-dollar"></i>
-                        <p>$369.34</p>
-                        <span>this month's revenue</span>
-                    </div>
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-dollar-bill"></i>
-                        <p>$40,578.94</p>
-                        <span>total revenue</span>
-                    </div>
+                    <form class="small-12">
+                        <div class="payment-content small-12 small-centered medium-6 columns">
+                            <ul>
+                                <li>
+                                    <div class="feature small-12">
+                                        <img src="../../img/zerobars-stripe-payments-logo.png" alt="ZeroBars Payments">
+                                    </div>  
+                                </li>   
+                                <li>
+                                    <div class="tutorial small-12">
+                                        <h2>ZeroBars does not store any of your bank account information.</h2>
+                                        <p>Stripe handles the transferring of sales between all of the accounts involved within a 
+                                            transaction. Since our site is powered by Stripe, we ask that all of our sellers sign 
+                                            up for a Stripe account to begin accepting payments from orders through our marketplace.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tutorial small-12">
+                                        <h2>Managing Your Account With Stripe</h2>
+                                        <img src="../../img/video-intro-cover.jpg"> 
+                                        <h3>Stripe Account Management Walkthrough</h3>
+                                        <p>Managing an account with Stripe is quite simple. We will walk through what happens after you 
+                                            click the 'Stripe Account' button below, navigating through the Stripe Dashboard and updating 
+                                            your account information with Stripe.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="../forge/dashboard.html" class="btn green">Stripe Account</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section> 
@@ -161,9 +166,13 @@
     <script src="../../js/foundation.min.js"></script>
     
     <!-- Custom Scripts -->
+    <script src="../../js/vendor/canvasjs.min.js"></script>
+    <script src="../../js/foundation/foundation.tab.js"></script>
+    <script src="../../js/vendor/dropzone.js"></script>
     
     <script>
         $(document).foundation();
+            
         $(document).ready(function() {
 	
             setTimeout(function(){

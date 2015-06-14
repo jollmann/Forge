@@ -104,13 +104,19 @@ textarea{height:200px;}
 .select::after{content:'\f199'; font-family:'foundation-icons'; position:absolute; top:0; right:10px; color:#fff; font-size:24px; z-index:1;}
 select{background:none; border:2px solid rgba(255,255,255,.7); -webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease; color:#ccc; font-size:14px; line-height:16px; position:relative; z-index:2;}
 select:focus, input:focus, textarea:focus{outline:none;}
-.label{position:relative; font-size:14px; line-height:16px; color:#959595; padding:10px 0; font-family:'Open Sans', sans-serif; background-color:transparent; cursor:auto; text-align:left;}
+.label{position:relative; font-size:14px; line-height:16px; color:#959595; padding:10px 0; font-family:'Open Sans', sans-serif; background-color:transparent; cursor:auto; text-align:left; width:100%; font-weight:normal;}
 .label em{color:#ac070b;}
+.label .small-9{font-weight:normal;}
 
 /* Crop Box --------- */
 .imageBox{position: relative; height: 400px; width: 400px; border:1px solid #aaa; background: #fff; overflow: hidden; background-repeat: no-repeat; cursor:move;}
 .imageBox .thumbBox{position: absolute; top: 50%; left: 50%; width: 200px; height: 200px; margin-top: -100px; margin-left: -100px; box-sizing: border-box; border: 1px solid rgb(102, 102, 102); box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5); background: none repeat scroll 0% 0% transparent;}
 .imageBox .spinner{position: absolute; top: 0; left: 0; bottom: 0; right: 0; text-align: center; line-height: 400px; background: rgba(0,0,0,0.7);}
+
+
+/* Tooltip --------- */
+.tooltip{background:#fff; color:#666;}
+.tooltip > .nub{border-color: transparent transparent #fff transparent;}
 
 
 /* --- Begin Block Styling --- */
@@ -220,7 +226,9 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 .store-signup main .store-form-container form ul li ol{margin-left:0;}
 .store-signup main .store-form-container form ul li ol li{width:100px;}
 .store-signup main .store-form-container form ul li span{float:left; font-size:14px; line-height:16px; color:#959595; margin:16px 0 0 10px;}
+.store-signup main .store-form-container form ul li span.tip{margin:-8px 0 0 0; font-size:24px; line-height:24px; position:relative; border:0; float:right;}
 .store-signup main .store-form-container form ul li p{font-size:13px; line-height:16px; color:#959595; font-style:italic; margin-top:20px;}
+.store-signup main .store-form-container form ul li .handle{margin-bottom:20px;}
 
 .store-signup main .store-form-container form ul li.upload{margin-bottom:40px;}
 .store-signup main .store-form-container form ul li.upload label{margin-bottom:30px;}
@@ -246,7 +254,7 @@ footer .footer-bottom .copyright address{font-size:12px; line-height:16px; color
 
 .store-signup main .store-form-container .disclaimer p{display:block; width:100%; text-align:center; color:#959595; font-size:13px; line-height:16px; margin-top:10px; margin-bottom:300px;}
 
-.store-signup main .store-form-container .payments{text-align:center; padding:40px 0; margin-bottom:40px; background: #80a699; /* Old browsers */ background: -moz-linear-gradient(-45deg,  #80a699 0%, #0f2c3a 60%, #0f2c3a 100%, #171717 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#80a699), color-stop(60%,#0f2c3a), color-stop(100%,#0f2c3a), color-stop(100%,#171717)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(-45deg,  #80a699 0%,#0f2c3a 60%,#0f2c3a 100%,#171717 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(-45deg,  #80a699 0%,#0f2c3a 60%,#0f2c3a 100%,#171717 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(-45deg,  #80a699 0%,#0f2c3a 60%,#0f2c3a 100%,#171717 100%); /* IE10+ */ background: linear-gradient(135deg,  #80a699 0%,#0f2c3a 60%,#0f2c3a 100%,#171717 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80a699', endColorstr='#171717',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.store-signup main .store-form-container .payments{text-align:center; padding:40px 0; margin-bottom:40px; background: #3bc102; /* Old browsers */ background: -moz-linear-gradient(-45deg,  #3bc102 0%, #2c7100 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3bc102), color-stop(100%,#2c7100)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(-45deg,  #3bc102 0%,#2c7100 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(-45deg,  #3bc102 0%,#2c7100 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(-45deg,  #3bc102 0%,#2c7100 100%); /* IE10+ */ background: linear-gradient(135deg,  #3bc102 0%,#2c7100 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bc102', endColorstr='#2c7100',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
 .store-signup main .store-form-container .tutorial{text-align:left; margin-bottom:40px;}
 .store-signup main .store-form-container .tutorial img{box-shadow:0 2px 20px #404040; margin:30px 0;}
 .store-signup main .store-form-container .tutorial h2{font-size:20px; line-height:24px; color:#fff; font-weight:400;}

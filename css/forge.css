@@ -7,7 +7,7 @@ body.forge section{padding:0;}
 body.forge header{margin:0;}
 body.forge h1, h2, h3, h4, h5, h6{color:#576474;}
 p{color:#346b83;}
-a{color:#3a9cff;}
+a{color:#3bc102;}
 a:hover{opacity:.6;}
 
 
@@ -29,8 +29,9 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     background:#fff; color:#346b83; border:1px solid #e8ebf1; box-shadow:none; border-color:#e8ebf1;
 }
 input[type="file"]{color:transparent; text-align:center; height:42px; width:auto;}
+input[type="file"]:hover{color:transparent;}
 input[type="file"]::-webkit-file-upload-button{visibility:hidden;}
-input[type="file"]::before{content:'Upload an Image'; display:block; color:#ccc; max-width:155px; margin:0 auto; float:none; text-align:center;}
+input[type="file"]::before{content:'Upload an Image'; display:block; color:#9098a3; max-width:155px; margin:0 auto; float:none; text-align:center;}
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus{
     color:#666;
 }
@@ -45,6 +46,12 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
 select{border:1px solid #e8ebf1; background:url('../img/select-down-arrow-grey.png') 98% 7px no-repeat; color:#666;}
 select.larger{padding:12px 17px 13px; height:55px; background-position:98% 17px;}
 
+
+/* Tooltip --------- */
+.toolsy{text-align:right;}
+.toolsy .tip{font-size:24px; line-height:24px; margin:-8px 0 0 0; position:relative; color:#959595;}
+.tooltip{background:#e8ebf1; color:#576474;}
+.tooltip > .nub{border-color: transparent transparent #e8ebf1 transparent;}
 
 
 /* Global Blocks -------- */
@@ -65,10 +72,10 @@ select.larger{padding:12px 17px 13px; height:55px; background-position:98% 17px;
 .forge .sidebar .forgeNav nav ul li{float:left; width:100%; padding:10px 0.9375rem; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease;}
 .forge .sidebar .forgeNav nav ul li:hover{background:rgba(0,0,0,0.4);}
 .forge .sidebar .forgeNav nav ul li a{color:#9098a3; font-size:14px; line-height:24px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; float:left; width:100%;}
-.forge .sidebar .forgeNav nav ul li a:hover{color:#27e9ff;}
+.forge .sidebar .forgeNav nav ul li a:hover{color:#3bc102;}
 .forge .sidebar .forgeNav nav ul li a i{float:left; font-size:24px; color:#fff;}
 .forge .sidebar .forgeNav nav ul li a span{float:left; margin:3px 0 0 10px;}
-.forge .sidebar .forgeNav nav ul li a .store-avatar{float:left; text-align:center; width:32px; height:32px; background-color: #6a35c8; background-image: -webkit-linear-gradient(#6a35c8, #27e9ff); background-image: linear-gradient(#6a35c8, #27e9ff); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
+.forge .sidebar .forgeNav nav ul li a .store-avatar{float:left; text-align:center; width:32px; height:32px; background-color: #2c7100; background-image: -webkit-linear-gradient(#2c7100, #3bc102); background-image: linear-gradient(#2c7100, #3bc102); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
 .forge .sidebar .forgeNav nav ul li a .store-avatar i{color:#fff; float:none; display:block; font-size:20px; line-height:20px; margin:5px 0 0 2px;}
 .forge .sidebar .forgeNav nav ul li h3{color:#fff; font-size:14px; line-height:22px; text-transform:uppercase;}
 .forge .sidebar .forgeNav .settings ul li:first-child:hover{background:none;}
@@ -87,7 +94,7 @@ select.larger{padding:12px 17px 13px; height:55px; background-position:98% 17px;
 /* Pagination --------- */
 .pagination ul li{color:#9098a3;}
 .pagination ul li:first-child{padding-left:0;}
-.pagination ul li span{color:#fff; padding:15px 20px 10px 20px; background-color: #6a35c8; background-image: -webkit-linear-gradient(#6a35c8, #27e9ff); background-image: linear-gradient(#6a35c8, #27e9ff); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
+.pagination ul li span{color:#fff; padding:15px 20px 10px 20px; background-color: #3bc102; background-image: -webkit-linear-gradient(#2c7100, #3bc102); background-image: linear-gradient(#2c7100, #3bc102); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
 .pagination ul li a{color: #9098a3;}
 .pagination ul li a:hover{color:#9098a3;}
 .pagination ul li a.previous, .pagination ul li a.next{border:2px solid #9098a3; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
@@ -238,12 +245,30 @@ select.larger{padding:12px 17px 13px; height:55px; background-position:98% 17px;
 .product .fallback .dz-preview .dz-image .radio-white label{visibility:hidden; opacity:0; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; transition:all .3s ease;}
 .product .fallback .dz-preview .dz-image:hover .radio-white{background:rgba(255,255,255,.8);}
 .product .fallback .dz-preview .dz-image:hover .radio-white label{visibility:visible; opacity:1;}
+.product .all-cats-list p{font-size:14px; line-height:22px; margin-bottom:20px;}
+.product .all-cats-list a{color:#3bc102; font-weight:600;}
 
 
+/* Store Settings -------- */
+
+.settings textarea{height:283px;}
+.settings .upload .cropped{margin-bottom:30px;}
+.settings .upload input{margin-bottom:30px;}
 
 
+/* Store Payment -------- */
+
+.payment .payment-content .feature{text-align:center; padding:40px 0; margin-bottom:40px; background: #3bc102; /* Old browsers */ background: -moz-linear-gradient(-45deg,  #3bc102 0%, #2c7100 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3bc102), color-stop(100%,#2c7100)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(-45deg,  #3bc102 0%,#2c7100 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(-45deg,  #3bc102 0%,#2c7100 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(-45deg,  #3bc102 0%,#2c7100 100%); /* IE10+ */ background: linear-gradient(135deg,  #3bc102 0%,#2c7100 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bc102', endColorstr='#2c7100',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.payment .payment-content .tutorial{text-align:left; margin-bottom:40px;}
+.payment .payment-content .tutorial img{margin:30px 0;}
+.payment .payment-content .tutorial h2{font-size:20px; line-height:24px; font-weight:400; margin-bottom:10px;}
+.payment .payment-content .tutorial h3{font-size:18px; line-height:24px; font-weight:400; margin-bottom:10px;}
+.payment .payment-content .tutorial p{font-size:14px; line-height:22px; font-style:normal; font-weight:300;}
 
 
+/* Store Dashboard -------- */
+.forge.dashboard .content .pulse .stats{margin:15px 2%;}
+.forge.dashboard .content .pulse .stats i{font-size:36px;}
 
 
 

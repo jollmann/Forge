@@ -23,14 +23,14 @@
     <script src="../../js/app.js"></script>
     
 </head>
-<body class="forge dashboard">
+<body class="forge policies">
     
     <header>
         <!-- Insert mobile nav here -->
     </header>
     
     <main>
-        <section class="main cbp-spmenu-push">
+        <section>
             <div class="sidebar columns show-for-large-up">
                 <div class="store-details small-12">
                     <div class="user-avatar">
@@ -62,7 +62,7 @@
                                 <h3>Manage</h3>
                             </li>
                             <li class="columns">
-                                <a class="dashboard" href="dashboard.html">Store Dashboard</a>
+                                <a class="dashboard" href="#">Store Dashboard</a>
                             </li>
                             <li class="columns">
                                 <a class="orders" href="orders.html">Orders</a>
@@ -104,49 +104,38 @@
                 </div>
             </div>
             <div class="content small-12 columns">
-                <div class="forge-header small-12">
-                    <div class="title small-12 medium-6">
-                        <h1>Dashboard</h1>
+                <div class="row">
+                    <div class="forge-header small-12">
+                        <div class="title small-12 medium-6">
+                            <h1>Store Policies</h1>
+                        </div>
+                        <div class="ctas small-12 medium-6">
+                            <ul>
+                                <li>
+                                    <a class="btn trans mail" href="mailto:support@zero-bars.com"><i class="fi-mail"></i></a>
+                                </li>
+                                <li>
+                                    <button type="submit" class="btn green">Save</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="ctas small-12 medium-6">
-                        <ul>
-                            <li>
-                                <a class="btn trans mail" href="mailto:support@zero-bars.com"><i class="fi-mail"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="pulse small-12">
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-torsos-all"></i>
-                        <p>4</p>
-                        <span>new customers</span>
-                    </div>
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-pricetag-multiple"></i>
-                        <p>8</p>
-                        <span>total products sold</span>
-                    </div>
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-download"></i>
-                        <p>4</p>
-                        <span>total orders</span>
-                    </div>
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-shopping-cart"></i>
-                        <p>$26.94</p>
-                        <span>average order value</span>
-                    </div>
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-dollar"></i>
-                        <p>$369.34</p>
-                        <span>this month's revenue</span>
-                    </div>
-                    <div class="stats small-12 medium-3">
-                        <i class="fi-dollar-bill"></i>
-                        <p>$40,578.94</p>
-                        <span>total revenue</span>
-                    </div>
+                    <form class="small-12">
+                        <div class="policies-content small-12">
+                            <div class="small-6 columns">
+                                <ul>
+                                    <li>
+                                        <label class="label">Store Shipping and Returns Policy<em>*</em></label>
+                                        <textarea>We ship UPS ground only. Returns must be made within 30 days of purchase.</textarea>
+                                    </li>
+                                    <li>
+                                        <label class="label">Additional Store Policies or Directions</label>
+                                        <textarea placeholder="e.g. To place a custom order follow these directions."></textarea>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section> 
@@ -161,9 +150,13 @@
     <script src="../../js/foundation.min.js"></script>
     
     <!-- Custom Scripts -->
+    <script src="../../js/vendor/canvasjs.min.js"></script>
+    <script src="../../js/foundation/foundation.tab.js"></script>
+    <script src="../../js/vendor/dropzone.js"></script>
     
     <script>
         $(document).foundation();
+            
         $(document).ready(function() {
 	
             setTimeout(function(){
