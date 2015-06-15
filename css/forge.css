@@ -197,6 +197,8 @@ select.larger{padding:12px 17px 13px; height:55px; background-position:98% 17px;
 .orders .content .activity-detail .product p img{float:left; margin-right:10px; width:75px; height:75px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
 .orders .content .activity-detail .status{margin-bottom:5px; text-align:left; margin-bottom:10px;}
 .orders .content .activity-detail .status p{border:1px solid #e8ebf1; padding:5px 10px; font-size:13px; line-height:16px; float:left;}
+.orders .content .activity-detail .status a{float:right; margin-right:20px; position:relative; top:-20px;}
+.orders .content .activity-detail .status a i{font-size:22px;}
 .orders .content .activity-detail .breakdown{margin-bottom:10px; text-align:left;}
 .orders .content .activity-detail .breakdown p{margin-bottom:5px; font-size:14px; line-height:22px; font-weight:600;}
 .orders .content .activity-detail .breakdown p span{opacity:.6;}
@@ -270,6 +272,43 @@ select.larger{padding:12px 17px 13px; height:55px; background-position:98% 17px;
 .forge.dashboard .content .pulse .stats{margin:15px 2%;}
 .forge.dashboard .content .pulse .stats i{font-size:36px;}
 
+.forge.dashboard .content .chart{margin:40px 0; position:relative;}
+.forge.dashboard .content .chart .legend table{position:absolute; top:16px; left:46px; font-size:smaller; color:#d9dee9;}
+.forge.dashboard .content .chart .legend table .legendColorBox div.color{border:1px solid #ccc; padding:1px;}
+.forge.dashboard .content .chart .legend table .legendColorBox div.color span.orders{width:4px; height:0; border:5px solid rgb(120,205,81); overflow:hidden; float:left;}
+.forge.dashboard .content .chart .legend table .legendColorBox div.color span.revenue{width:4px; height:0; border:5px solid rgb(68,162,221); overflow:hidden; float:left;}
+.forge.dashboard .content .chart .legend table .legendLabel span{color:#666; border-radius: 5px;}
+.forge.dashboard .content .chart canvas{float:left; width:100%; height:400px;}
+
+.forge.dashboard .content h2{font-size:18px; line-height:24px; font-weight:400; text-transform:uppercase; margin-bottom:20px;}
+.forge.dashboard .content .little-brudo{margin-bottom:40px; min-height:376px;}
+
+
+/* Print Order -------- */
+.forge.print .content{width:100%;}
+.print .content .forge-header .ctas ul li:last-child{margin-right:20px;}
+.print .content .order-details .intro{border-bottom:1px solid #e8ebf1; padding-bottom:30px; margin-bottom:30px;}
+.print .content .order-details .intro h2{font-size:18px; text-align:left; font-weight:400; margin-bottom:10px;}
+.print .content .order-details .intro p{font-size:14px; line-height:22px;}
+.print .content .order-details .intro p span{font-weight:600;}
+.print .content .shipping-container{margin:0 2%; width:46%; min-height:220px; margin-bottom:30px;}
+.print .content .shipping-container h3{font-size:18px; font-weight:400; margin-bottom:20px;}
+.print .content .shipping-container ul{float:left; width:100%;}
+.print .content .shipping-container ul li{float:left; width:100%; margin-bottom:10px;}
+.print .content .shipping-container ul li p{font-size:14px; line-height:22px;}
+.print .content .shipping-container ul li p span{font-weight:600;}
+
+.print .content .order-totals{margin-top:40px;}
+.print .content .order-totals ul{float:right;}
+.print .content .order-totals ul li{float:left; width:100%; margin-bottom:10px;}
+.print .content .order-totals ul li span.amount-label, .print .content .order-totals ul li span.amount{font-size:16px; line-height:24px; font-weight:600; float:right;}
+.print .content .order-totals ul li span.amount{margin-left:40px; min-width:100px; text-align:right;}
+.print .content .order-totals ul li span.grand.amount-label, .print .content .order-totals ul li span.grand.amount{margin-top:50px;}
+.print .content .order-totals ul li span.grand.amount{font-size:36px; font-weight:600; color:#3bc102;}
+
+@media print {
+   .print .content .forge-header .ctas{display:none;}
+}
 
 
 
