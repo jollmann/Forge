@@ -265,9 +265,30 @@ aside.cart{background:#f9f9f9;}
 
 
 /* Footer --------- */
-footer{background:#101010; margin-top:190px; padding:70px 40px 15px 40px; position:relative;}
-footer a.reg{position:absolute; top:-20px; left:0; right:0; width:245px;}
-footer .left{}
+footer{background:#101010; margin-top:190px; padding:70px 40px 40px 40px; position:relative;}
+footer a.reg{position:absolute; top:-20px; left:0; right:0; width:245px; text-align:center;}
+footer ul{float:left; width:100%;}
+footer ul li{float:left;}
+footer i{font-size:30px;}
+footer .left ul li{margin-right:15px;}
+footer .middle .pri{margin-bottom:10px;}
+footer .middle .pri ul li{width:20%; text-align:center;}
+footer .middle .pri ul li a{font-size:16px; text-transform:uppercase; font-weight:400;}
+footer .middle .pri ul li p{color:#959595; font-size:14px; font-weight:900;}
+footer .middle .sec ul.help{margin-bottom:5px;}
+footer .middle .sec ul li{width:19%; text-align:center; margin:0 1%;}
+footer .middle .sec ul li:first-child{margin-left:0;}
+footer .middle .sec ul li:last-child{margin-right:0;}
+footer .middle .sec ul li a{font-size:12px; color:#959595; text-transform:uppercase;}
+footer .middle .sec ul li a:hover{color:#fff;}
+footer .middle .copy{text-align:center;}
+footer .middle .copy p{font-size:12px; color:#959595;}
+footer .middle .copy ul li{width:10%; text-align:center; margin:0 1%;}
+footer .middle .copy ul li a{font-size:12px; color:#959595;}
+footer .middle .copy ul li a:hover{color:#fff;}
+footer .right ul{float:left; width:100%;}
+footer .right ul li{float:right; margin-left:2%;}
+footer .right ul li:last-child img{width:75px; margin-top:11px;}
 
 
 /* Pagination --------- */
@@ -479,6 +500,8 @@ footer .left{}
 /* PDP --------- */
 .pdp section{padding:0;}
 .pdp .crumbs{padding:40px 0 20px 0;}
+.pdp .theProd{background:#101010; padding-bottom:60px;}
+.pdp .crumbs{background:#101010;}
 .pdp .product-wrap .product-images, .pdp .product-wrap .product-info{margin-top:20px;}
 .pdp .product-wrap .product-info{margin-right:60px;}
 .pdp .product-wrap .product-images{background-repeat:no-repeat; background-size:cover; background-position:50% center; position:relative;}
@@ -502,7 +525,7 @@ footer .left{}
 .pdp .product-wrap .product-info .a2c{margin-top:30px; padding-bottom:30px;}
 .pdp .product-wrap .product-info .a2c ul{float:left; width:100%;}
 .pdp .product-wrap .product-info .a2c ul li{float:left; width:100%;}
-.pdp .product-wrap .product-info .a2c ul li:last-child{margin-top:20px; padding:20px 0; border-top:1px solid #404040; border-bottom:1px solid #404040;}
+.pdp .product-wrap .product-info .a2c ul li:last-child{margin-top:20px; padding:30px 0; border-top:1px solid #404040; border-bottom:1px solid #404040;}
 .pdp .product-wrap .product-info .a2c select{max-width:75%; margin-bottom:0;}
 .pdp .product-wrap .product-info .a2c button{width:100%; max-width:75%;}
 .pdp .product-wrap .product-info .overview{float:left;}
@@ -512,13 +535,14 @@ footer .left{}
 .pdp .product-wrap .product-info .overview ul li p{font-size:14px; line-height:22px; color:#959595; font-weight:400;}
 .pdp .product-wrap .product-info .overview ul li p span{color:#fff;}
 
-.pdp .product-wrap .product-info .seller-social{float:left; background:#101010; padding:20px 0; margin-bottom:20px;}
+.pdp .product-wrap .product-info .seller-social{float:left; background:#202020; padding:20px 0; margin-bottom:20px;}
 .pdp .product-wrap .product-info .seller-social .seller-shop .top img{float:left; margin:0 10px; border:2px solid rgba(255,255,255,.4); display:block; width:50px; height:50px;}
 .pdp .product-wrap .product-info .seller-social .seller-shop .top h2{float:left; font-size:18px; color:#ccc; font-weight:600; margin:11px 10px 0 0;}
 .pdp .product-wrap .product-info .seller-social .seller-shop .top a{float:right; font-size:12px; padding:3px 10px; margin:8px 10px 0 0;}
 
-.pdp .product-wrap .know{padding-top:60px; margin-top:60px; border-top:1px solid #404040;}
-.pdp .product-wrap .know .tabs-content .content{padding:40px 0; width:50%;}
+.pdp .product-wrap .know{padding-top:60px;}
+.pdp .product-wrap .know .tabs-content{margin-bottom:40px;}
+.pdp .product-wrap .know .tabs-content .content{padding:40px 0; width:60%;}
 .pdp .product-wrap .know .tabs-content .content p{float:left; width:100%; font-size:14px; line-height:22px; color:#959595; margin-bottom:30px;}
 
 .pdp .product-wrap .meet{background:#101010; padding:60px 0;}
