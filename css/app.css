@@ -133,6 +133,14 @@ select.larger{padding:12px 17px 13px; height:55px; background-position:98% 17px;
 .tooltip > .nub{border-color: transparent transparent #fff transparent;}
 
 
+/* Border Radius 50% --------- */
+.round{-webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
+
+
+/* Parallax BG --------- */
+.plax{background-position:50% 0px; background-repeat:no-repeat; background-size:cover; background-attachment:fixed;}
+
+
 /* --- Begin Block Styling --- */
 
 /* Header - Desktop - General --------- */
@@ -276,7 +284,7 @@ footer .middle .pri ul li{width:20%; text-align:center;}
 footer .middle .pri ul li a{font-size:16px; text-transform:uppercase; font-weight:400;}
 footer .middle .pri ul li p{color:#959595; font-size:14px; font-weight:900;}
 footer .middle .sec ul.help{margin-bottom:5px;}
-footer .middle .sec ul li{width:19%; text-align:center; margin:0 1%;}
+footer .middle .sec ul li{width:23%; text-align:center; margin:0 1%;}
 footer .middle .sec ul li:first-child{margin-left:0;}
 footer .middle .sec ul li:last-child{margin-right:0;}
 footer .middle .sec ul li a{font-size:12px; color:#959595; text-transform:uppercase;}
@@ -389,10 +397,6 @@ footer .right ul li:last-child img{width:75px; margin-top:11px;}
 .section-title h2{font-size:24px; color:#fff; font-weight:600; line-height:28px; text-transform:uppercase;}
 
 
-/* Border Radius 50% --------- */
-.round{-webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
-
-
 /* Product List - Grid View--------- */
 .gridit .seller-item{text-align:center; margin-top:50px; height:auto;}
 .gridit .seller-item img{display:block;}
@@ -400,6 +404,41 @@ footer .right ul li:last-child img{width:75px; margin-top:11px;}
 .gridit .seller-item .details h2{font-size:14px; color:#fff; line-height:16px; margin-bottom:5px;}
 .gridit .seller-item .details p{font-size:16px; font-weight:600; color:#959595;}
 
+
+/* Fine Print Block--------- */
+.fine-print{padding:60px 0 80px 0 !important; background-image:url('../img/fine-print-bg.jpg');}
+.fine-print .section-content{background:rgba(0,0,0,.6); padding:20px;}
+.fine-print .section-content p{font-size:14px; color:#fff; line-height:22px;}
+
+
+/* Email Sign Up Block--------- */
+.email .medium-9.columns{border-bottom: 1px solid rgba(255, 255, 255, 0.4); padding: 80px 0;}
+.email .medium-9.columns h1{margin: 0 0 10px 0; float: left; width: 100%; font-size: 28px; line-height: 28px; font-weight: 400; color: #fff; text-align: center;}
+.email .medium-9.columns h4{margin: 0 0 45px 0; float: left; width: 100%; font-size: 18px; line-height: 20px; font-weight: 400; color: #959595; text-align: center;}
+.email .medium-9.columns form ul{margin: 0 auto; float: none;}
+.email .medium-9.columns form ul li:last-child{text-align:center;}
+.email .medium-9.columns form ul li span{text-align: center; font-size: 14px; line-height: 22px; color: #ccc; float: left; width: 100%; display: block; margin-bottom:20px;}
+.email .medium-9.columns form ul li button{width:200px;}
+
+
+/* Promo - 3 Across Block--------- */
+.promoThree{padding: 80px 0 !important;}
+.promoThree .medium-4{text-align:center;}
+.promoThree .main-icon{font-size: 60px; color: #3bc102;}
+.promoThree h2{font-size: 22px; line-height: 24px; color: #fff; text-transform: uppercase; margin: 10px 0 15px 0; font-weight: 600;}
+.promoThree p{font-size: 14px; line-height: 22px; color: #ccc; margin: 0 0 15px 0;}
+.promoThree .f3-buttons{width: 100%; float: left; margin-bottom: 20px;}
+.promoThree span{font-size: 14px; line-height: 22px; color: #fff;}
+.promoThree span a{color: #3bc102; font-weight: 600;}
+.promoThree .sell{margin-top: 10px; float: left; width: 100%;}
+.promoThree .medium-4.omega{text-align: left;}
+.promoThree .social{margin: 10px 0;}
+.promoThree .social .social-icon{float: left; width: 50px; height: auto; text-align: center; margin-right: 10px;}
+.promoThree .social .social-icon i{font-size: 48px; color: #fff;}
+.promoThree .social .social-info{margin-top:15px;}
+.promoThree .social .social-info h4{font-size: 16px; line-height: 18px; text-transform: uppercase; font-weight: 600; color: #ccc;}
+.promoThree .social .social-info a{font-size: 14px; line-height: 16px; color: #3bc102;}
+.promoThree .social .social-info a:hover{color: #fff;}
 
 
 /* --- Begin Page Styling --- */
@@ -500,7 +539,7 @@ footer .right ul li:last-child img{width:75px; margin-top:11px;}
 /* PDP --------- */
 .pdp section{padding:0;}
 .pdp .crumbs{padding:40px 0 20px 0;}
-.pdp .theProd{background:#101010; padding-bottom:60px;}
+.pdp .theProd{background:#101010; padding-bottom:80px;}
 .pdp .crumbs{background:#101010;}
 .pdp .product-wrap .product-images, .pdp .product-wrap .product-info{margin-top:20px;}
 .pdp .product-wrap .product-info{margin-right:60px;}
@@ -525,7 +564,7 @@ footer .right ul li:last-child img{width:75px; margin-top:11px;}
 .pdp .product-wrap .product-info .a2c{margin-top:30px; padding-bottom:30px;}
 .pdp .product-wrap .product-info .a2c ul{float:left; width:100%;}
 .pdp .product-wrap .product-info .a2c ul li{float:left; width:100%;}
-.pdp .product-wrap .product-info .a2c ul li:last-child{margin-top:20px; padding:30px 0; border-top:1px solid #404040; border-bottom:1px solid #404040;}
+.pdp .product-wrap .product-info .a2c ul li:last-child{margin-top:20px; padding:30px 0; border-top:1px solid rgba(255, 255, 255, 0.4); border-bottom:1px solid rgba(255, 255, 255, 0.4);}
 .pdp .product-wrap .product-info .a2c select{max-width:75%; margin-bottom:0;}
 .pdp .product-wrap .product-info .a2c button{width:100%; max-width:75%;}
 .pdp .product-wrap .product-info .overview{float:left;}
@@ -535,17 +574,17 @@ footer .right ul li:last-child img{width:75px; margin-top:11px;}
 .pdp .product-wrap .product-info .overview ul li p{font-size:14px; line-height:22px; color:#959595; font-weight:400;}
 .pdp .product-wrap .product-info .overview ul li p span{color:#fff;}
 
-.pdp .product-wrap .product-info .seller-social{float:left; background:#202020; padding:20px 0; margin-bottom:20px;}
+.pdp .product-wrap .product-info .seller-social{float:left; background:#202020; padding:20px 0; margin-bottom:20px; margin-left:0.9375rem;}
 .pdp .product-wrap .product-info .seller-social .seller-shop .top img{float:left; margin:0 10px; border:2px solid rgba(255,255,255,.4); display:block; width:50px; height:50px;}
 .pdp .product-wrap .product-info .seller-social .seller-shop .top h2{float:left; font-size:18px; color:#ccc; font-weight:600; margin:11px 10px 0 0;}
 .pdp .product-wrap .product-info .seller-social .seller-shop .top a{float:right; font-size:12px; padding:3px 10px; margin:8px 10px 0 0;}
 
 .pdp .product-wrap .know{padding-top:60px;}
 .pdp .product-wrap .know .tabs-content{margin-bottom:40px;}
-.pdp .product-wrap .know .tabs-content .content{padding:40px 0; width:60%;}
+.pdp .product-wrap .know .tabs-content .content{padding:40px 0; width:75%;}
 .pdp .product-wrap .know .tabs-content .content p{float:left; width:100%; font-size:14px; line-height:22px; color:#959595; margin-bottom:30px;}
 
-.pdp .product-wrap .meet{background:#101010; padding:60px 0;}
+.pdp .product-wrap .meet{background:#101010; padding:80px 0;}
 .pdp .product-wrap .meet .logo img{width:100px; display:block;}
 .pdp .product-wrap .meet h3{font-size:24px; color:#ccc; font-weight:400; line-height:28px;}
 .pdp .product-wrap .meet .seller-social ul{float:left; margin-top:15px;}
@@ -559,6 +598,7 @@ footer .right ul li:last-child img{width:75px; margin-top:11px;}
 .pdp .product-wrap .meet .total .wrapper p{font-size:24px; line-height:28px; color:#3bc102; font-weight:400; margin-top:20px;}
 .pdp .product-wrap .meet .total .wrapper span{font-size:14px; color:#959595; font-weight:400;}
 
+.pdp footer{margin-top:0;}
 
 
 
